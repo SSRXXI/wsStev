@@ -1,0 +1,8 @@
+<urn:getInfo xmlns:urn="urn:ConsultaPID">
+  <consumidor>param_consumidor</consumidor>
+  <tramite>param_tramite</tramite>
+  <servicio>param_servicio</servicio>
+  <datainput>
+    <ppu>param_ppu</ppu>
+  </datainput>
+</urn:getInfo>

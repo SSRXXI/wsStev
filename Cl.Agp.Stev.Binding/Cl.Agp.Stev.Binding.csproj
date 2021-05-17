@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D7BA14E-3496-4565-BE4D-92E1D87F5F45}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cl.Agp.Stev.Binding</RootNamespace>
+    <AssemblyName>Cl.Agp.Stev.Binding</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acreedor.cs" />
+    <Compile Include="CertificadoAnotacionesVigentes.cs" />
+    <Compile Include="Comprador.cs" />
+    <Compile Include="Comunidad.cs" />
+    <Compile Include="ConsultaSolicitud\CSolicitud.cs" />
+    <Compile Include="ConsultaSolicitud\Rechazo.cs" />
+    <Compile Include="CrearStev\AdquiereDTO.cs" />
+    <Compile Include="CrearStev\CompraParaDTO.cs" />
+    <Compile Include="CrearStev\ComunidadDTO.cs" />
+    <Compile Include="CrearStev\DocumentoDTO.cs" />
+    <Compile Include="CrearStev\ImpuestoVerdeDTO.cs" />
+    <Compile Include="CrearStev\OperadorDTO.cs" />
+    <Compile Include="CrearStev\PersonaSimpleDTO.cs" />
+    <Compile Include="CrearStev\SolicitanteDTO.cs" />
+    <Compile Include="CrearStev\SolicitudDTO.cs" />
+    <Compile Include="CrearStev\VehiculoDTO.cs" />
+    <Compile Include="Direccion.cs" />
+    <Compile Include="Documento.cs" />
+    <Compile Include="Estipulante.cs" />
+    <Compile Include="Impuesto.cs" />
+    <Compile Include="LimStev\Acreedor.cs" />
+    <Compile Include="LimStev\Comunidad.cs" />
+    <Compile Include="LimStev\Documento.cs" />
+    <Compile Include="LimStev\Domicilio.cs" />
+    <Compile Include="LimStev\Operador.cs" />
+    <Compile Include="LimStev\Propietario.cs" />
+    <Compile Include="LimStev\Solicitante.cs" />
+    <Compile Include="LimStev\Solicitud.cs" />
+    <Compile Include="LimStev\Vehiculo.cs" />
+    <Compile Include="Observacion.cs" />
+    <Compile Include="Operador.cs" />
+    <Compile Include="Persona.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Propietario.cs" />
+    <Compile Include="Rechazos.cs" />
+    <Compile Include="ReIngreso.cs" />
+    <Compile Include="Request\CargaDocumentoRequest.cs" />
+    <Compile Include="Request\ConsultaAnotacionesVigentesRequest.cs" />
+    <Compile Include="Request\ConsultaCertificadoRequest.cs" />
+    <Compile Include="Request\ConsultaLimitacionRequest.cs" />
+    <Compile Include="Request\CreateLimitStevRequest.cs" />
+    <Compile Include="Request\CreateStevRequest.cs" />
+    <Compile Include="Request\EstadoSolicitudRequest.cs" />
+    <Compile Include="Request\Etapa1StevRequest.cs" />
+    <Compile Include="Request\Etapa2StevRequest.cs" />
+    <Compile Include="Request\Request.cs" />
+    <Compile Include="Response\CargaDocumentoResponse.cs" />
+    <Compile Include="Response\ConsultaAnotacionesVigentesResponse.cs" />
+    <Compile Include="Response\ConsultaCertificadoResponse.cs" />
+    <Compile Include="Response\ConsultaLimitacionResponse.cs" />
+    <Compile Include="Response\CreateLimitStevResponse.cs" />
+    <Compile Include="Response\CreateStevResponse.cs" />
+    <Compile Include="Response\EstadoSolicitudResponse.cs" />
+    <Compile Include="Response\Etapa1Response.cs" />
+    <Compile Include="Response\Etapa2Response.cs" />
+    <Compile Include="Solicitante.cs" />
+    <Compile Include="Solicitud.cs" />
+    <Compile Include="Vehiculo.cs" />
+    <Compile Include="Vendedor.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

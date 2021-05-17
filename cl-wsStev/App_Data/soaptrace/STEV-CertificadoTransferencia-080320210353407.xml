@@ -1,0 +1,9 @@
+<urn:getInfo  xmlns:urn="urn:ConsultaPID">
+  <consumidor>AGP</consumidor>
+  <servicio>CONSULTA SOLICITUD RVM</servicio>
+  <tramite></tramite>
+  <nroSolicitud>1625372</nroSolicitud>
+  <anho>2021</anho>
+  <ppu>LLCV21</ppu>
+</urn:getInfo>
+

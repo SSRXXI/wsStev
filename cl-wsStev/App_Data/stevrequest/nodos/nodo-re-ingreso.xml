@@ -1,0 +1,7 @@
+﻿<ReIngreso>
+  <PPU>param_reingreso_ppu</PPU>
+  <NroSolicitud>param_reingreso_nro_solicitud</NroSolicitud>
+  <FechaSolRech>param_reingreso_fecha_solicitud</FechaSolRech>
+  <NroResExenta>param_reingreso_nro_res_exenta</NroResExenta>
+  <FechaResExenta>param_reingreso_fecha_res_exenta</FechaResExenta>
+</ReIngreso>

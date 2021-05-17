@@ -1,0 +1,8 @@
+﻿<persona>
+  <calidad>param_calidad</calidad>
+  <runRut>param_rut</runRut>
+  <nombresRazon>param_nombre</nombresRazon>
+  <aPaterno>param_apellido_paterno</aPaterno>
+  <aMaterno>param_apellido_materno</aMaterno>
+  <Email>param_email</Email>
+</persona>

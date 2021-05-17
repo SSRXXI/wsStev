@@ -1,0 +1,32 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Body wsu:Id="Id-f34a4e41-1951-4f1b-a2f4-89bc60284789" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <ns:getInfoResponse xmlns:ns="urn:ConsultaPID">
+      <codigoresp>1</codigoresp>
+      <glosa>EXISTE INFORMACION PARA LA PATENTE CONSULTADA</glosa>
+      <certificadoAnotacionesVigentePatente>
+        <datosVehiculo>
+          <tipo>TRACTOR ANFIBIO</tipo>
+          <aFabrica>2012</aFabrica>
+          <marca>ARGO</marca>
+          <modelo>FRONTIER 650</modelo>
+          <numeroMotor>3489384</numeroMotor>
+          <numeroSerie>(NO INFORMADO)</numeroSerie>
+          <color>ROJO</color>
+          <tipoCombustible>GASOLINA</tipoCombustible>
+          <pesoBruto>1850.00 KILOS</pesoBruto>
+          <chasis>7182766</chasis>
+          <vin>(NO INFORMADO)</vin>
+        </datosVehiculo>
+        <PropietariosActuales>
+          <datosPropietario>
+            <nombrePersonaNatural>
+              <nombres>MARÍA FRANCISCA</nombres>
+              <apellidoPaterno>SALINAS</apellidoPaterno>
+              <apellidoMaterno>VALLE</apellidoMaterno>
+            </nombrePersonaNatural>
+          </datosPropietario>
+        </PropietariosActuales>
+      </certificadoAnotacionesVigentePatente>
+    </ns:getInfoResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,8 @@
+<urn:getInfo xmlns:urn="urn:ConsultaPID">
+  <consumidor></consumidor>
+  <tramite></tramite>
+  <servicio></servicio>
+  <datainput>
+    <patente>BCKP74</patente>
+  </datainput>
+</urn:getInfo>

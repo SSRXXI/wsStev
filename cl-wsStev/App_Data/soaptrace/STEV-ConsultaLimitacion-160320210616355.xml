@@ -1,0 +1,10 @@
+<urn:getInfo xmlns:urn="urn:ConsultaPID">
+	<consumidor></consumidor>
+	<servicio></servicio>
+	<tramite></tramite>
+	<datainput>
+		<nroSolicitud>1</nroSolicitud>
+		<anho>2018</anho>
+		<patente>CPTL67</patente>
+	</datainput>
+</urn:getInfo>

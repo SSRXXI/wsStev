@@ -1,0 +1,65 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header>
+    <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <wsu:Timestamp wsu:Id="Timestamp-ad830c46-d680-4fa8-a9a1-28163b4f228f" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <wsu:Created>2020-11-13T22:56:07Z</wsu:Created>
+        <wsu:Expires>2020-11-13T23:01:07Z</wsu:Expires>
+      </wsu:Timestamp>
+      <wsse:BinarySecurityToken wsu:Id="SecurityToken-3eb56cb0-f276-4a2a-82cc-28163b4f1412" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">MIIFgzCCBGugAwIBAgIMMXIoxt6Xnco3xr4rMA0GCSqGSIb3DQEBCwUAMGYxCzAJBgNVBAYTAkJFMRkwFwYDVQQKExBHbG9iYWxTaWduIG52LXNhMTwwOgYDVQQDEzNHbG9iYWxTaWduIE9yZ2FuaXphdGlvbiBWYWxpZGF0aW9uIENBIC0gU0hBMjU2IC0gRzIwHhcNMTcwNTMxMjEyNjA3WhcNMTkwNzA4MTUxMTAxWjCBtDELMAkGA1UEBhMCQ0wxETAPBgNVBAgTCFNhbnRpYWdvMREwDwYDVQQHEwhTYW50aWFnbzEvMC0GA1UECwwmU3ViZGlyZWNjacOzbiBkZSBFc3R1ZGlvcyB5IERlc2Fycm9sbG8xNDAyBgNVBAoTK1NlcnZpY2lvIGRlIFJlZ2lzdHJvIENpdmlsIGUgSWRlbnRpZmljYWNpb24xGDAWBgNVBAMTD2Rlc2F3cy5zcmNlaS5jbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMsDmyPILOXGxYf8tbfJJHKspXk5MUbOH9MCx82xmZSGT+4x2+zR28J5105b4oxXedlRBSscZFWrZbWykLbcR79AQWMmJJJ355SGG2o1O10cHhyAdCbatVdaAGU7aNsqCbJzPgv49LzGZtVRP5jbTnrFndcDF9vYABYmBifGH/fFht6diBv7ukJlXe5DZnuf4Hcm+yIeiowiAl0xYwNTCtslwi0VdMBDsXNPXjKv/lYP3J4trH9DULyYRiaU82Ea3+GgH71cxDkEFjEa6BqvlbuD2UPj/v4qaSpnMSriSvRwDKxD3xZfS4CYNS8YAV7m/V/rgpblxgrJaP0+0scBJ/UCAwEAAaOCAeAwggHcMA4GA1UdDwEB/wQEAwIFoDCBoAYIKwYBBQUHAQEEgZMwgZAwTQYIKwYBBQUHMAKGQWh0dHA6Ly9zZWN1cmUuZ2xvYmFsc2lnbi5jb20vY2FjZXJ0L2dzb3JnYW5pemF0aW9udmFsc2hhMmcycjEuY3J0MD8GCCsGAQUFBzABhjNodHRwOi8vb2NzcDIuZ2xvYmFsc2lnbi5jb20vZ3Nvcmdhbml6YXRpb252YWxzaGEyZzIwVgYDVR0gBE8wTTBBBgkrBgEEAaAyARQwNDAyBggrBgEFBQcCARYmaHR0cHM6Ly93d3cuZ2xvYmFsc2lnbi5jb20vcmVwb3NpdG9yeS8wCAYGZ4EMAQICMAkGA1UdEwQCMAAwSQYDVR0fBEIwQDA+oDygOoY4aHR0cDovL2NybC5nbG9iYWxzaWduLmNvbS9ncy9nc29yZ2FuaXphdGlvbnZhbHNoYTJnMi5jcmwwGgYDVR0RBBMwEYIPZGVzYXdzLnNyY2VpLmNsMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAdBgNVHQ4EFgQU/BchjCgSz5IlgA5n55DrwOFRReowHwYDVR0jBBgwFoAUlt5h8b0cFilTHMDMfTuDAEDmGnwwDQYJKoZIhvcNAQELBQADggEBAK7gwLqsBiRQO3sLupD2wpsW1JmReG7ShiroBiNqWGVe1/DZbhMyaRua+2Ou/YUKuXnGzdkiKZOGzIRw33KtYIc4WjkjzBw43brwpCc6MFd5bhZ19z28X+1PKIYMIOboNo1oQotuhWMXRCYAUo5Uc0yKAwXwNxbuw+u/B7rVifyMgR5hnfmvoXdwK7qvt17z9B54dIB1hof0/x8YwggUB0CHnRNz58Eyor7IVPr8IEMldq5XQ9hcI3dQ8XhGChi8FYvDuMtZNcsbjkD9KtJMDfnERZgzLKPFAKoFZrH34AvF7NP1t++UEoQJMVnefOcEIpBpMcjc7e/FPKJTD6hmL2g=</wsse:BinarySecurityToken>
+      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+          <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+          <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+          <Reference URI="#Id-99b272ec-8ba2-41e5-a8ad-28163b4f8ee6">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>xxcgmkT9pFLEsq/AKA8Pp9Z14NU=</DigestValue>
+          </Reference>
+          <Reference URI="#Timestamp-ad830c46-d680-4fa8-a9a1-28163b4f228f">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>XYODq/BlsLRhiVmi3dXbV0YLTtY=</DigestValue>
+          </Reference>
+        </SignedInfo>
+        <SignatureValue>Km3a6hEA8D2qqn+KsPSHK2PiiynQ7uKDgdcnefmnHUrw3V7NEB4m6yKS9Z3aP/lt800OAZJB+FotQGeUIYG6xXfEG7TDyRy/aapk1LHxO4Zs4rA3jl9JR6f47SNQ9Bh0cILUQbF99qa5m3rnSuwH7FJ5i4sCvLFeut7McIOr2bQrNTBmt6TlrXE6Rg5z02N4fCdZqeswpg0QtJ0sjo38mOaBRK4GWNDLUke4Jdol3LnzTwSadNaz93z2h2MCzwB3fjX1d7bD8aPS+dTTHAU/k9ZNdROisNIyJ7EBuCjIX+NCoZ1qOBzIE6towBDBluMqbIF/6yQxB/zTQ0kBjy5FXA==</SignatureValue>
+        <dsig:KeyInfo xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+          <wsse:SecurityTokenReference xmlns="">
+            <wsse:Reference URI="#SecurityToken-3eb56cb0-f276-4a2a-82cc-28163b4f1412" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" />
+          </wsse:SecurityTokenReference>
+        </dsig:KeyInfo>
+      </Signature>
+    </wsse:Security>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body wsu:Id="Id-99b272ec-8ba2-41e5-a8ad-28163b4f8ee6" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <ns:getInfoResponse xmlns:ns="urn:ConsultaPID">
+      <codigoresp>1</codigoresp>
+      <glosa>EXISTE INFORMACION PARA LA PATENTE CONSULTADA</glosa>
+      <certificadoAnotacionesVigentePatente>
+        <datosVehiculo>
+          <tipo>AUTOMOVIL</tipo>
+          <aFabrica>2010</aFabrica>
+          <marca>SUBARU</marca>
+          <modelo>ALL NEW LEGACY 2.5I AWD LTD AUT</modelo>
+          <numeroMotor>E065525</numeroMotor>
+          <numeroSerie>(NO INFORMADO)</numeroSerie>
+          <color>GRIS GRAFITO METALICO</color>
+          <tipoCombustible>GASOLINA</tipoCombustible>
+          <pesoBruto>1463.00 KILOS</pesoBruto>
+          <chasis>G012008</chasis>
+          <vin>JF1BM9L92AG012008</vin>
+        </datosVehiculo>
+        <PropietariosActuales>
+          <datosPropietario>
+            <fechaAdquisicion>
+              <fechaValida>2019-11-25</fechaValida>
+            </fechaAdquisicion>
+          </datosPropietario>
+        </PropietariosActuales>
+      </certificadoAnotacionesVigentePatente>
+    </ns:getInfoResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

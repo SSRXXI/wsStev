@@ -1,0 +1,9 @@
+<urn:getInfo  xmlns:urn="urn:ConsultaPID">
+  <consumidor>AGP</consumidor>
+  <servicio>CONSULTA TRANSFERENCIA</servicio>
+  <tramite>prueba</tramite>
+  <nroSolicitud>138</nroSolicitud>
+  <anho>2018</anho>
+  <ppu>HJ1309</ppu>
+</urn:getInfo>
+

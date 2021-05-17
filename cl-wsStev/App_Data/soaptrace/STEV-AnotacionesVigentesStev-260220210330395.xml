@@ -1,0 +1,8 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Body>
+    <ns:getInfoResponse xmlns:ns="urn:ConsultaPID">
+      <codigoresp>102</codigoresp>
+      <glosa>Errot Certificado a expirado</glosa>
+    </ns:getInfoResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

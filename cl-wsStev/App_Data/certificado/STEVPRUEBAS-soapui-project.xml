@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="5de4c8c7-44d9-494d-a032-9e5f93d72fed" activeEnvironment="Default" name="STEVPRUEBAS" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="e9279821-6dc8-48b5-903d-06d7beacf80d" wsaVersion="NONE" name="CreaStev" type="wsdl" bindingName="{urn:ConsultaPID}CreaStev" soapVersion="1_1" anonymous="optional" definition="file:/C:/Users/SSRXXI/Desktop/GitHub/STEV%20Registro%20Civil/PID_CreaStev/PID_CreaStev/CreaStev.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Users\SSRXXI\Desktop\GitHub\STEV%20Registro%20Civil\PID_CreaStev\PID_CreaStev\CreaStev.wsdl"><con:part><con:url>file:\C:\Users\SSRXXI\Desktop\GitHub\STEV%20Registro%20Civil\PID_CreaStev\PID_CreaStev\CreaStev.wsdl</con:url><con:content><![CDATA[<definitions name="CreaStev" targetNamespace="urn:ConsultaPID" xmlns:tns="urn:ConsultaPID" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns="urn:ConsultaPID" xmlns:SOAP="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:MIME="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:DIME="http://schemas.xmlsoap.org/ws/2002/04/dime/wsdl/" xmlns:WSDL="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <schema targetNamespace="urn:ConsultaPID" elementFormDefault="unqualified" attributeFormDefault="unqualified" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="rechazo">
+        <sequence>
+          <element name="Observa" type="xsd:string" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="opera">
+        <sequence>
+          <element name="region" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="runUsuario" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="rutEmpresa" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="Imp-Trans">
+        <sequence>
+          <element name="CodigoCID" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="MontoPagado" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="doc">
+        <sequence>
+          <element name="TipoDocumento" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="Naturaleza" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="Numero" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="Fecha" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="Lugar" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="Total" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="Moneda" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="Kilometraje" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="RutEmisor" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="codigoNotaria" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="domi">
+        <sequence>
+          <element name="calle" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="ltrDomicilio" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="nroDomicilio" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="rDomicilio" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="telefono" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="comuna" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="cPostal" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="person">
+        <sequence>
+          <element name="calidad" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="runRut" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="nombresRazon" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="aPaterno" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="aMaterno" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="Email" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="varper">
+        <sequence>
+          <element name="esComunidad" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="cantidad" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="people">
+        <sequence>
+          <element name="persona" type="ns:person" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="direccion" type="ns:domi" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="estipu">
+        <sequence>
+          <element name="persona" type="ns:person" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="direccion" type="ns:domi" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="Prohibicion" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="customer">
+        <sequence>
+          <element name="comunidad" type="ns:varper" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="compran" type="ns:people" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="vende">
+        <sequence>
+          <element name="comunidad" type="ns:varper" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="persona" type="ns:person" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="vehi">
+        <sequence>
+          <element name="PPU" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="DV" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="TipoVehiculo" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="Marca" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="Modelo" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="AnoFabric" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="Color" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="nroMotor" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="nroChasis" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="nroSerie" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="nroVin" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="repertorio">
+        <sequence>
+          <element name="fecha" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="hora" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="numeroSol" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="oficina" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="ppu" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="tipoSol" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="interno">
+        <sequence>
+          <element name="resultado" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="codigo" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="terminal" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="fechasis" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="Advertencia" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="AFolio" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="SolFolio" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="glosa" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="Anterior">
+        <sequence>
+          <element name="PPU" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="NroSolicitud" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="FechaSolRech" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="NroResExenta" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="FechaResExenta" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="DataInput">
+        <sequence>
+          <element name="vehiculo" type="ns:vehi" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="Vendedor" type="ns:vende" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="Comprador" type="ns:customer" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="Estipulante" type="ns:estipu" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="documento" type="ns:doc" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="ImpuestoTransferencia" type="ns:Imp-Trans" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="operador" type="ns:opera" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="Solicitante" type="ns:people" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="seguimiento" type="ns:interno" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="soli" type="ns:repertorio" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="ReIngreso" type="ns:Anterior" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <!--operation request element-->
+      <element name="getInfo">
+        <complexType>
+          <sequence>
+            <element name="consumidor" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+            <element name="tramite" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+            <element name="datainput" type="ns:DataInput" minOccurs="0" maxOccurs="1" nillable="true"/>
+          </sequence>
+        </complexType>
+      </element>
+      <!--operation response element-->
+      <element name="getInfoResponse">
+        <complexType>
+          <sequence>
+            <element name="codigoresp" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+            <element name="glosa" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+            <element name="solicitud" type="ns:repertorio" minOccurs="0" maxOccurs="1" nillable="true"/>
+            <element name="midata" type="ns:interno" minOccurs="0" maxOccurs="1" nillable="true"/>
+            <element name="Observaciones" type="ns:rechazo" minOccurs="0" maxOccurs="1" nillable="true"/>
+          </sequence>
+        </complexType>
+      </element>
+    </schema>
+  </types>
+  <message name="getInfo">
+    <part name="parameters" element="ns:getInfo"/>
+  </message>
+  <message name="getInfoResponse">
+    <part name="parameters" element="ns:getInfoResponse"/>
+  </message>
+  <portType name="CreaStevPortType">
+    <operation name="getInfo">
+      <documentation>Service definition of function ns__getInfo</documentation>
+      <input message="tns:getInfo"/>
+      <output message="tns:getInfoResponse"/>
+    </operation>
+  </portType>
+  <binding name="CreaStev" type="tns:CreaStevPortType">
+    <SOAP:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="getInfo">
+      <SOAP:operation soapAction=""/>
+      <input>
+        <SOAP:body parts="parameters" use="literal"/>
+      </input>
+      <output>
+        <SOAP:body parts="parameters" use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="CreaStev">
+    <documentation>gSOAP 2.7.12 generated service definition</documentation>
+    <port name="CreaStev" binding="tns:CreaStev">
+      <SOAP:address location="https://desaws.srcei.cl:8343/cgi-bin/AGP/WSAGP.cgi"/>
+    </port>
+  </service>
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://servelec1.srcei.cl:8343/cgi-bin/AGP/WSAGP.cgi</con:endpoint></con:endpoints><con:operation id="09dc52b2-6c5f-47c8-8c34-9ba58aa1ffbc" isOneWay="false" action="" name="getInfo" bindingOperationName="getInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cdc00991-7d1e-46ec-9742-76393a566525" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://servelec1.srcei.cl:8343/cgi-bin/AGP/WSAGP.cgi</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header><wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><ds:Signature Id="SIG-FDFDF96346C726E3ED162119109918516" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"><ec:InclusiveNamespaces PrefixList="SOAP-ENV" xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><ds:Reference URI="#id-1"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"><ec:InclusiveNamespaces PrefixList="" xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>qYR6mjAj4iQSkhMXtLmP9ADdWD0=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>r2VR7F5cv1C5BB0bfvAoJcis6nGco9NsZuJrjFQ6nOz0iHbl89xIoLfQLl6l6Cf5s/ErTo+v+1vS&#13;
+XTqgI48GOLS6YA+ZVkULozcYKAniLPVq8F/c68RKP1HEeByIApVD4qeeuN62LRBBTi0e75/rg2tK&#13;
+WIOq/Oy0dVmdZG3CEGn5ysbzj5gIfUJH427CzrQapimxKUDL5jm/ewkLw400N6AabfEguGe1BOEg&#13;
+vGUPMSd/vf61B2azHNWbpXaoDbx5xBwJyX3lzI0WSKdvIXQpy6loRp46skqrqJlyICVSsfxYT23N&#13;
+70rkIqp2zqHdJ8uoBloiThGuDwgTwfXgFwYlqQ==</ds:SignatureValue><ds:KeyInfo Id="KI-FDFDF96346C726E3ED162119109918314"><wsse:SecurityTokenReference wsu:Id="STR-FDFDF96346C726E3ED162119109918315"><wsse:KeyIdentifier EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509SubjectKeyIdentifier">U88lflVPzQALpmbr6aLxL3LAC70=</wsse:KeyIdentifier></wsse:SecurityTokenReference></ds:KeyInfo></ds:Signature></wsse:Security>
+      
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body wsu:Id="id-1" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+      <urn:getInfo xmlns:urn="urn:ConsultaPID">
+         <consumidor>AGP</consumidor>
+         <servicio>CONSULTA LIMITACION</servicio>
+         <tramite>prueba</tramite>
+         <nroSolicitud>171055</nroSolicitud>
+         <anho>2021</anho>
+         <ppu>LDFC20</ppu>
+      </urn:getInfo>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:ConsultaPID/CreaStevPortType/getInfoRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer><con:crypto><con:source>C:/Users/SSRXXI/Desktop/GitHub/ws-cl-agpsa-stev-net/WsAgpStev/App_Data/certificado/Firma RM 2020.pfx</con:source><con:password>agpsa2020</con:password><con:type>KEYSTORE</con:type></con:crypto><con:incoming><con:name>firma</con:name></con:incoming><con:outgoing><con:name>firma</con:name><con:entry type="Signature" username="rodrigo fernando moreno gonzalez" password="agpsa2020"><con:configuration><crypto>Firma RM 2020.pfx</crypto><keyIdentifierType>4</keyIdentifierType><signatureAlgorithm>http://www.w3.org/2000/09/xmldsig#rsa-sha1</signatureAlgorithm><signatureCanonicalization>http://www.w3.org/2001/10/xml-exc-c14n#</signatureCanonicalization><useSingleCert>false</useSingleCert><prependSignature>true</prependSignature><digestAlgorithm>http://www.w3.org/2000/09/xmldsig#sha1</digestAlgorithm><customTokenValueType/><customTokenId/></con:configuration></con:entry></con:outgoing></con:wssContainer><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

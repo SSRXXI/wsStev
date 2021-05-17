@@ -1,0 +1,9 @@
+D:\AGP\wsStev\Cl.Agp.Stev.Utils\bin\Debug\Cl.Agp.Stev.Utils.dll
+D:\AGP\wsStev\Cl.Agp.Stev.Utils\bin\Debug\Cl.Agp.Stev.Utils.pdb
+D:\AGP\wsStev\Cl.Agp.Stev.Utils\bin\Debug\log4net.dll
+D:\AGP\wsStev\Cl.Agp.Stev.Utils\bin\Debug\log4net.xml
+D:\AGP\wsStev\Cl.Agp.Stev.Utils\obj\Debug\Cl.Agp.Stev.Utils.csprojAssemblyReference.cache
+D:\AGP\wsStev\Cl.Agp.Stev.Utils\obj\Debug\Cl.Agp.Stev.Utils.csproj.CoreCompileInputs.cache
+D:\AGP\wsStev\Cl.Agp.Stev.Utils\obj\Debug\Cl.Agp.Stev.Utils.csproj.CopyComplete
+D:\AGP\wsStev\Cl.Agp.Stev.Utils\obj\Debug\Cl.Agp.Stev.Utils.dll
+D:\AGP\wsStev\Cl.Agp.Stev.Utils\obj\Debug\Cl.Agp.Stev.Utils.pdb

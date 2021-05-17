@@ -1,0 +1,8 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Body>
+    <ns:getInfoResponse xmlns:ns="urn:ConsultaPID">
+      <codigoresp>109</codigoresp>
+      <glosa>Error de sintaxis en XML de entrada</glosa>
+    </ns:getInfoResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

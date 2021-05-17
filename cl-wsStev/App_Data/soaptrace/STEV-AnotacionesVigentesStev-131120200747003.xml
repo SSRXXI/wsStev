@@ -1,0 +1,8 @@
+<urn:getInfo xmlns:urn="urn:ConsultaPID">
+  <consumidor>AGP</consumidor>
+  <tramite>EVALUACION DE RIESGO</tramite>
+  <servicio>ANOTACIONES VIGENTES DE PATENTES</servicio>
+  <datainput>
+    <patente>KSTT72</patente>
+  </datainput>
+</urn:getInfo>

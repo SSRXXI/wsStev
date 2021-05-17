@@ -1,0 +1,22 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header></SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns:getInfoResponse xmlns:ns="urn:ConsultaPID">
+      <codigoresp>0</codigoresp>
+      <glosa>Solicitud Ingresada</glosa>
+      <solicitud>
+        <fecha>20180514</fecha>
+        <hora>2008</hora>
+        <numeroSol>140</numeroSol>
+        <oficina>RVM CATEDRAL</oficina>
+        <ppu>PU.3456-7</ppu>
+        <tipoSol>TRANSFERENCIA</tipoSol>
+      </solicitud>
+      <Observaciones>
+        <Observa>Tipo vehiculo no corresponde a modelo o año fabricacion</Observa>
+        <Observa>Existen solicitudes anteriores</Observa>
+        <Observa>Nombre / Run Estipulante no coincide</Observa>
+      </Observaciones>
+    </ns:getInfoResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

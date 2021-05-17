@@ -1,0 +1,10 @@
+<urn:getInfo xmlns:urn="urn:ConsultaPID">
+	<consumidor>AGP</consumidor>
+	<servicio>CONSULTA LIMITACION</servicio>
+	<tramite></tramite>
+	<datainput>
+		<nroSolicitud>171055</nroSolicitud>
+		<anho>2021</anho>
+		<ppu>LDFC20</ppu>
+	</datainput>
+</urn:getInfo>

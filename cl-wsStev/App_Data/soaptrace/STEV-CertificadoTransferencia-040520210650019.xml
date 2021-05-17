@@ -1,0 +1,9 @@
+<urn:getInfo  xmlns:urn="urn:ConsultaPID">
+  <consumidor>AGP</consumidor>
+  <servicio>CONSULTA SOLICITUD RVM</servicio>
+  <tramite>CONSULTA TRANSFERENCIA</tramite>
+  <nroSolicitud>1801179</nroSolicitud>
+  <anho>2021</anho>
+  <ppu>FTRT11</ppu>
+</urn:getInfo>
+

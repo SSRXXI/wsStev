@@ -1,0 +1,9 @@
+﻿<direccion>
+  <calle>param_calle</calle>
+  <ltrDomicilio>param_direccion</ltrDomicilio>
+  <nroDomicilio>param_nro_direccion</nroDomicilio>
+  <rDomicilio>param_resto_direccion</rDomicilio>
+  <telefono>param_telefono</telefono>
+  <comuna>param_comuna</comuna>
+  <cPostal>param_codigo_postal</cPostal>
+</direccion>

@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="5a908797-4e0e-4001-8c13-46867d0b390d" activeEnvironment="Default" name="PI_A_Vigente" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="743e31ec-c90c-4da0-a131-ad309ea2b746" wsaVersion="NONE" name="PI_A_Vigente" type="wsdl" bindingName="{urn:ConsultaPID}PI_A_Vigente" soapVersion="1_1" anonymous="optional" definition="file:/C:/Users/SSRXXI/Desktop/GitHub/STEV%20Registro%20Civil/PID-CertAVigente/PID-CertAVigente/PI_A_Vigente.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Users\SSRXXI\Desktop\GitHub\STEV%20Registro%20Civil\PID-CertAVigente\PID-CertAVigente\PI_A_Vigente.wsdl"><con:part><con:url>file:\C:\Users\SSRXXI\Desktop\GitHub\STEV%20Registro%20Civil\PID-CertAVigente\PID-CertAVigente\PI_A_Vigente.wsdl</con:url><con:content><![CDATA[<definitions name="PI_A_Vigente" targetNamespace="urn:ConsultaPID" xmlns:tns="urn:ConsultaPID" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns="urn:ConsultaPID" xmlns:SOAP="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:MIME="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:DIME="http://schemas.xmlsoap.org/ws/2002/04/dime/wsdl/" xmlns:WSDL="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <schema targetNamespace="urn:ConsultaPID" elementFormDefault="unqualified" attributeFormDefault="unqualified" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/" schemaLocation="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="fechas">
+        <sequence>
+          <element name="fechaValida" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="fechaTruncada" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="rune">
+        <sequence>
+          <element name="numero" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="dv" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="names">
+        <sequence>
+          <element name="nombres" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="apellidoPaterno" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="apellidoMaterno" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="Propietario">
+        <sequence>
+          <element name="nombrePersonaNatural" type="ns:names" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="PropietarioActual">
+        <sequence>
+          <element name="datosPropietario" type="ns:Propietario" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="RVM">
+        <sequence>
+          <element name="tipo" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="aFabrica" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="marca" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="modelo" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="numeroMotor" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="numeroSerie" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="color" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="tipoCombustible" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="pesoBruto" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="chasis" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="vin" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="limitacion">
+        <sequence>
+          <element name="tipo" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="aFabrica" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="marca" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="modelo" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="numeroMotor" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="numeroSerie" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="color" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="tipoCombustible" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="pesoBruto" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="chasis" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="vin" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="anotacion" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="fechaRepertorio" type="ns:fechas" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="acreedor" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="numeroDocumentoRol" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="repertorio" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+          <element name="numeroRepertorio" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="SalidaGene">
+        <sequence>
+          <element name="datosVehiculo" type="ns:RVM" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+          <element name="datosVehiculoConLimitacionesDominio" type="ns:limitacion" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+          <element name="PropietariosActuales" type="ns:PropietarioActual" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <complexType name="DataInput">
+        <sequence>
+          <element name="ppu" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+        </sequence>
+      </complexType>
+      <!--operation request element-->
+      <element name="getInfo">
+        <complexType>
+          <sequence>
+            <element name="consumidor" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+            <element name="tramite" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+            <element name="datainput" type="ns:DataInput" minOccurs="0" maxOccurs="1" nillable="true"/>
+          </sequence>
+        </complexType>
+      </element>
+      <!--operation response element-->
+      <element name="getInfoResponse">
+        <complexType>
+          <sequence>
+            <element name="codigoresp" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+            <element name="glosa" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+            <element name="certificadoAnotacionesVigentePatente" type="ns:SalidaGene" minOccurs="0" maxOccurs="1" nillable="true"/>
+          </sequence>
+        </complexType>
+      </element>
+    </schema>
+  </types>
+  <message name="getInfo">
+    <part name="parameters" element="ns:getInfo"/>
+  </message>
+  <message name="getInfoResponse">
+    <part name="parameters" element="ns:getInfoResponse"/>
+  </message>
+  <portType name="PI_A_VigentePortType">
+    <operation name="getInfo">
+      <documentation>Service definition of function ns__getInfo</documentation>
+      <input message="tns:getInfo"/>
+      <output message="tns:getInfoResponse"/>
+    </operation>
+  </portType>
+  <binding name="PI_A_Vigente" type="tns:PI_A_VigentePortType">
+    <SOAP:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="getInfo">
+      <SOAP:operation soapAction=""/>
+      <input>
+        <SOAP:body parts="parameters" use="literal"/>
+      </input>
+      <output>
+        <SOAP:body parts="parameters" use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="PI_A_Vigente">
+    <documentation>gSOAP 2.7.12 generated service definition</documentation>
+    <port name="PI_A_Vigente" binding="tns:PI_A_Vigente">
+      <SOAP:address location="https://desaws.srcei.cl/cgi-bin:8343/AGP/WSAGP.cgi"/>
+    </port>
+  </service>
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://schemas.xmlsoap.org/soap/encoding/</con:url><con:content><![CDATA[<!--Schema for the SOAP/1.1 encoding
+
+Portions © 2001 DevelopMentor. 
+© 2001 W3C (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved.  
+ 
+This document is governed by the W3C Software License [1] as described in the FAQ [2].
+[1] http://www.w3.org/Consortium/Legal/copyright-software-19980720
+[2] http://www.w3.org/Consortium/Legal/IPR-FAQ-20000620.html#DTD 
+By obtaining, using and/or copying this work, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions:
+
+Permission to use, copy, modify, and distribute this software and its documentation, with or without modification,  for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the software and documentation or portions thereof, including modifications, that you make:
+
+1.  The full text of this NOTICE in a location viewable to users of the redistributed or derivative work. 
+
+2.  Any pre-existing intellectual property disclaimers, notices, or terms and conditions. If none exist, a short notice of the following form (hypertext is preferred, text is permitted) should be used within the body of any redistributed or derivative code: "Copyright © 2001 World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/" 
+
+3.  Notice of any changes or modifications to the W3C files, including the date changes were made. (We recommend you provide URIs to the location from which the code is derived.)   
+
+Original W3C files; http://www.w3.org/2001/06/soap-encoding
+Changes made: 
+     - reverted namespace to http://schemas.xmlsoap.org/soap/encoding/
+     - reverted root to only allow 0 and 1 as lexical values
+	 - removed default value from root attribute declaration
+
+THIS SOFTWARE AND DOCUMENTATION IS PROVIDED "AS IS," AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE OR DOCUMENTATION WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.
+
+COPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENTATION.
+
+The name and trademarks of copyright holders may NOT be used in advertising or publicity pertaining to the software without specific, written prior permission. Title to copyright in this software and any associated documentation will at all times remain with copyright holders.-->
+<xs:schema targetNamespace="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.xmlsoap.org/soap/encoding/">
+  <xs:attribute name="root">
+    <xs:annotation>
+      <xs:documentation>'root' can be used to distinguish serialization roots from other
+       elements that are present in a serialization but are not roots of
+       a serialized value graph</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:boolean">
+        <xs:pattern value="0|1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attributeGroup name="commonAttributes">
+    <xs:annotation>
+      <xs:documentation>Attributes common to all elements that function as accessors or 
+        represent independent (multi-ref) values.  The href attribute is
+        intended to be used in a manner like CONREF.  That is, the element
+        content should be empty iff the href attribute appears</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="id" type="xs:ID"/>
+    <xs:attribute name="href" type="xs:anyURI"/>
+    <xs:anyAttribute namespace="##other" processContents="lax"/>
+  </xs:attributeGroup>
+  <!--Global Attributes.  The following attributes are intended to be usable via qualified attribute names on any complex type referencing them.-->
+  <!--Array attributes. Needed to give the type and dimensions of an array's contents, and the offset for partially-transmitted arrays.-->
+  <xs:simpleType name="arrayCoordinate">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:attribute name="arrayType" type="xs:string"/>
+  <xs:attribute name="offset" type="tns:arrayCoordinate"/>
+  <xs:attributeGroup name="arrayAttributes">
+    <xs:attribute ref="tns:arrayType"/>
+    <xs:attribute ref="tns:offset"/>
+  </xs:attributeGroup>
+  <xs:attribute name="position" type="tns:arrayCoordinate"/>
+  <xs:attributeGroup name="arrayMemberAttributes">
+    <xs:attribute ref="tns:position"/>
+  </xs:attributeGroup>
+  <xs:group name="Array">
+    <xs:sequence>
+      <xs:any namespace="##any" minOccurs="0" maxOccurs="unbounded" processContents="lax"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:element name="Array" type="tns:Array"/>
+  <xs:complexType name="Array">
+    <xs:annotation>
+      <xs:documentation>'Array' is a complex type for accessors identified by position</xs:documentation>
+    </xs:annotation>
+    <xs:group ref="tns:Array" minOccurs="0"/>
+    <xs:attributeGroup ref="tns:arrayAttributes"/>
+    <xs:attributeGroup ref="tns:commonAttributes"/>
+  </xs:complexType>
+  <!--'Struct' is a complex type for accessors identified by name. 
+       Constraint: No element may be have the same name as any other,
+       nor may any element have a maxOccurs > 1.-->
+  <xs:element name="Struct" type="tns:Struct"/>
+  <xs:group name="Struct">
+    <xs:sequence>
+      <xs:any namespace="##any" minOccurs="0" maxOccurs="unbounded" processContents="lax"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:complexType name="Struct">
+    <xs:group ref="tns:Struct" minOccurs="0"/>
+    <xs:attributeGroup ref="tns:commonAttributes"/>
+  </xs:complexType>
+  <!--'Base64' can be used to serialize binary data using base64 encoding
+       as defined in RFC2045 but without the MIME line length limitation.-->
+  <xs:simpleType name="base64">
+    <xs:restriction base="xs:base64Binary"/>
+  </xs:simpleType>
+  <!--Element declarations corresponding to each of the simple types in the 
+      XML Schemas Specification.-->
+  <xs:element name="duration" type="tns:duration"/>
+  <xs:complexType name="duration">
+    <xs:simpleContent>
+      <xs:extension base="xs:duration">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="dateTime" type="tns:dateTime"/>
+  <xs:complexType name="dateTime">
+    <xs:simpleContent>
+      <xs:extension base="xs:dateTime">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="NOTATION" type="tns:NOTATION"/>
+  <xs:complexType name="NOTATION">
+    <xs:simpleContent>
+      <xs:extension base="xs:QName">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="time" type="tns:time"/>
+  <xs:complexType name="time">
+    <xs:simpleContent>
+      <xs:extension base="xs:time">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="date" type="tns:date"/>
+  <xs:complexType name="date">
+    <xs:simpleContent>
+      <xs:extension base="xs:date">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="gYearMonth" type="tns:gYearMonth"/>
+  <xs:complexType name="gYearMonth">
+    <xs:simpleContent>
+      <xs:extension base="xs:gYearMonth">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="gYear" type="tns:gYear"/>
+  <xs:complexType name="gYear">
+    <xs:simpleContent>
+      <xs:extension base="xs:gYear">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="gMonthDay" type="tns:gMonthDay"/>
+  <xs:complexType name="gMonthDay">
+    <xs:simpleContent>
+      <xs:extension base="xs:gMonthDay">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="gDay" type="tns:gDay"/>
+  <xs:complexType name="gDay">
+    <xs:simpleContent>
+      <xs:extension base="xs:gDay">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="gMonth" type="tns:gMonth"/>
+  <xs:complexType name="gMonth">
+    <xs:simpleContent>
+      <xs:extension base="xs:gMonth">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="boolean" type="tns:boolean"/>
+  <xs:complexType name="boolean">
+    <xs:simpleContent>
+      <xs:extension base="xs:boolean">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="base64Binary" type="tns:base64Binary"/>
+  <xs:complexType name="base64Binary">
+    <xs:simpleContent>
+      <xs:extension base="xs:base64Binary">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="hexBinary" type="tns:hexBinary"/>
+  <xs:complexType name="hexBinary">
+    <xs:simpleContent>
+      <xs:extension base="xs:hexBinary">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="float" type="tns:float"/>
+  <xs:complexType name="float">
+    <xs:simpleContent>
+      <xs:extension base="xs:float">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="double" type="tns:double"/>
+  <xs:complexType name="double">
+    <xs:simpleContent>
+      <xs:extension base="xs:double">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="anyURI" type="tns:anyURI"/>
+  <xs:complexType name="anyURI">
+    <xs:simpleContent>
+      <xs:extension base="xs:anyURI">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="QName" type="tns:QName"/>
+  <xs:complexType name="QName">
+    <xs:simpleContent>
+      <xs:extension base="xs:QName">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="string" type="tns:string"/>
+  <xs:complexType name="string">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="normalizedString" type="tns:normalizedString"/>
+  <xs:complexType name="normalizedString">
+    <xs:simpleContent>
+      <xs:extension base="xs:normalizedString">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="token" type="tns:token"/>
+  <xs:complexType name="token">
+    <xs:simpleContent>
+      <xs:extension base="xs:token">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="language" type="tns:language"/>
+  <xs:complexType name="language">
+    <xs:simpleContent>
+      <xs:extension base="xs:language">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="Name" type="tns:Name"/>
+  <xs:complexType name="Name">
+    <xs:simpleContent>
+      <xs:extension base="xs:Name">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="NMTOKEN" type="tns:NMTOKEN"/>
+  <xs:complexType name="NMTOKEN">
+    <xs:simpleContent>
+      <xs:extension base="xs:NMTOKEN">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="NCName" type="tns:NCName"/>
+  <xs:complexType name="NCName">
+    <xs:simpleContent>
+      <xs:extension base="xs:NCName">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="NMTOKENS" type="tns:NMTOKENS"/>
+  <xs:complexType name="NMTOKENS">
+    <xs:simpleContent>
+      <xs:extension base="xs:NMTOKENS">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="ID" type="tns:ID"/>
+  <xs:complexType name="ID">
+    <xs:simpleContent>
+      <xs:extension base="xs:ID">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="IDREF" type="tns:IDREF"/>
+  <xs:complexType name="IDREF">
+    <xs:simpleContent>
+      <xs:extension base="xs:IDREF">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="ENTITY" type="tns:ENTITY"/>
+  <xs:complexType name="ENTITY">
+    <xs:simpleContent>
+      <xs:extension base="xs:ENTITY">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="IDREFS" type="tns:IDREFS"/>
+  <xs:complexType name="IDREFS">
+    <xs:simpleContent>
+      <xs:extension base="xs:IDREFS">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="ENTITIES" type="tns:ENTITIES"/>
+  <xs:complexType name="ENTITIES">
+    <xs:simpleContent>
+      <xs:extension base="xs:ENTITIES">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="decimal" type="tns:decimal"/>
+  <xs:complexType name="decimal">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="integer" type="tns:integer"/>
+  <xs:complexType name="integer">
+    <xs:simpleContent>
+      <xs:extension base="xs:integer">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="nonPositiveInteger" type="tns:nonPositiveInteger"/>
+  <xs:complexType name="nonPositiveInteger">
+    <xs:simpleContent>
+      <xs:extension base="xs:nonPositiveInteger">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="negativeInteger" type="tns:negativeInteger"/>
+  <xs:complexType name="negativeInteger">
+    <xs:simpleContent>
+      <xs:extension base="xs:negativeInteger">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="long" type="tns:long"/>
+  <xs:complexType name="long">
+    <xs:simpleContent>
+      <xs:extension base="xs:long">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="int" type="tns:int"/>
+  <xs:complexType name="int">
+    <xs:simpleContent>
+      <xs:extension base="xs:int">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="short" type="tns:short"/>
+  <xs:complexType name="short">
+    <xs:simpleContent>
+      <xs:extension base="xs:short">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="byte" type="tns:byte"/>
+  <xs:complexType name="byte">
+    <xs:simpleContent>
+      <xs:extension base="xs:byte">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="nonNegativeInteger" type="tns:nonNegativeInteger"/>
+  <xs:complexType name="nonNegativeInteger">
+    <xs:simpleContent>
+      <xs:extension base="xs:nonNegativeInteger">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="unsignedLong" type="tns:unsignedLong"/>
+  <xs:complexType name="unsignedLong">
+    <xs:simpleContent>
+      <xs:extension base="xs:unsignedLong">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="unsignedInt" type="tns:unsignedInt"/>
+  <xs:complexType name="unsignedInt">
+    <xs:simpleContent>
+      <xs:extension base="xs:unsignedInt">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="unsignedShort" type="tns:unsignedShort"/>
+  <xs:complexType name="unsignedShort">
+    <xs:simpleContent>
+      <xs:extension base="xs:unsignedShort">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="unsignedByte" type="tns:unsignedByte"/>
+  <xs:complexType name="unsignedByte">
+    <xs:simpleContent>
+      <xs:extension base="xs:unsignedByte">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="positiveInteger" type="tns:positiveInteger"/>
+  <xs:complexType name="positiveInteger">
+    <xs:simpleContent>
+      <xs:extension base="xs:positiveInteger">
+        <xs:attributeGroup ref="tns:commonAttributes"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="anyType"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://desaws.srcei.cl/cgi-bin:8343/AGP/WSAGP.cgi</con:endpoint></con:endpoints><con:operation id="587ce0c7-8530-4153-bdd7-e47d837771cc" isOneWay="false" action="" name="getInfo" bindingOperationName="getInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e0723e83-e50a-4275-b118-a43e391955d9" name="Request 1" outgoingWss="Firma"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://desaws.srcei.cl:8343/cgi-bin/AGP/WSAGP.cgi </con:endpoint><con:request><![CDATA[<CHIE xsi:noNamespaceSchemaLocation="chie.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Header><wsse:Security xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"/></Header><Header><wsse:Security xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"/></Header>
+	<DATOS_ID>
+		<CORRELATIVO>3CV-AT-000000001</CORRELATIVO>
+		<PPU>AAAA-00</PPU>
+	</DATOS_ID>
+	<FECHAS_EMISION_VALIDEZ>
+		<FECHAEMISION>2019-12-01</FECHAEMISION>
+		<VALIDOHASTA>2022-12-01</VALIDOHASTA>
+	</FECHAS_EMISION_VALIDEZ>
+	<DATOSVEHICULO>
+		<CIT>AAAAAAAAAAAAAAAAA</CIT>
+		<TIPO>AUTO</TIPO>
+		<MARCA>MARCA</MARCA>
+		<ANIO>2019</ANIO>
+		<MODELO>MODELO</MODELO>
+		<COLOR>COLOR</COLOR>
+		<VIN>BBBBBBBBBB</VIN>
+		<NUMERO_MOTOR>CCCCCCCCCCCCCCC</NUMERO_MOTOR>
+	</DATOSVEHICULO>
+	<DATOS_EMISOR>
+		<RAZONSOCIAL>MTT</RAZONSOCIAL>
+		<DIRECCION>Amunategui 139</DIRECCION>
+		<COMUNA>Santiago</COMUNA>
+		<CIUDAD>Santiago</CIUDAD>
+		<EMAIL>chie@mtt.cl</EMAIL>
+		<FONO>+5655578994</FONO>
+	</DATOS_EMISOR>
+</CHIE>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:ConsultaPID/PI_A_VigentePortType/getInfoRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer><con:crypto><con:source>C:/Users/SSRXXI/Desktop/GitHub/ws-cl-agpsa-stev-net/WsAgpStev/App_Data/certificado/Firma RM 2020.pfx</con:source><con:password>agpsa2020</con:password><con:type>KEYSTORE</con:type></con:crypto><con:outgoing><con:name>Firma</con:name><con:entry type="Signature" username="rodrigo fernando moreno gonzalez" password="agpsa2020"><con:configuration><crypto>Firma RM 2020.pfx</crypto><keyIdentifierType>4</keyIdentifierType><signatureAlgorithm>http://www.w3.org/2000/09/xmldsig#rsa-sha1</signatureAlgorithm><signatureCanonicalization>http://www.w3.org/2001/10/xml-exc-c14n#</signatureCanonicalization><useSingleCert>false</useSingleCert><prependSignature>true</prependSignature><digestAlgorithm>http://www.w3.org/2000/09/xmldsig#sha1</digestAlgorithm><customTokenValueType/><customTokenId/></con:configuration></con:entry></con:outgoing></con:wssContainer><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

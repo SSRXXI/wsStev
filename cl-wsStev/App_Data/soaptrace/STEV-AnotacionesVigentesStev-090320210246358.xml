@@ -1,0 +1,72 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header>
+    <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <wsu:Timestamp wsu:Id="Timestamp-429275bf-044d-49d2-8b4a-28163b4f056d" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <wsu:Created>2021-03-09T17:15:09Z</wsu:Created>
+        <wsu:Expires>2021-03-09T17:20:09Z</wsu:Expires>
+      </wsu:Timestamp>
+      <wsse:BinarySecurityToken wsu:Id="SecurityToken-a8412f87-6207-4023-b3bc-28163b4f3906" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">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</wsse:BinarySecurityToken>
+      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+          <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+          <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+          <Reference URI="#Id-d6c57533-74f3-424a-a37f-28163b4f6cd6">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>lA+sY9gKi1tyWp+bgbGWnegkwN8=</DigestValue>
+          </Reference>
+          <Reference URI="#Timestamp-429275bf-044d-49d2-8b4a-28163b4f056d">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>bDthOrzbOiaJs5I03a9BsK0/uOg=</DigestValue>
+          </Reference>
+        </SignedInfo>
+        <SignatureValue>KIh7i+97xUZtg9WAYHmMUg/AcSk8CxXyr4HHuU/Ww0H4TCF4+1/W2a5hU+KPGM7A0s5GeSO/8uY3mjz95NU/U8k2f0hLz9Mcldz5Tk+xndmbMr0QLoo1MnER6pq9Q+LpsgPNBTKtVpW+U1dofDOhL1nkz3aPVhB7CLIklySszUFaIhex6T3hEbxdm52fNNZR1c4QVpMRnaKVS8z/fCmSZEXDknByg9+/WTVGVYscee9SYEzWJ3k463soPRZadPNoxc9kuqnDva5Gxf4pHfbMu46EUodf3lwDiTdlQLbVFLv7WSB54pEGjr1hwtQL0mpYzG7LwFWTiDfP85ZFbhtBlA==</SignatureValue>
+        <dsig:KeyInfo xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+          <wsse:SecurityTokenReference xmlns="">
+            <wsse:Reference URI="#SecurityToken-a8412f87-6207-4023-b3bc-28163b4f3906" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" />
+          </wsse:SecurityTokenReference>
+        </dsig:KeyInfo>
+      </Signature>
+    </wsse:Security>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body wsu:Id="Id-d6c57533-74f3-424a-a37f-28163b4f6cd6" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <ns:getInfoResponse xmlns:ns="urn:ConsultaPID">
+      <codigoresp>1</codigoresp>
+      <glosa>EXISTE INFORMACION PARA LA PATENTE CONSULTADA</glosa>
+      <certificadoAnotacionesVigentePatente>
+        <datosVehiculo>
+          <tipo>AUTOMOVIL</tipo>
+          <aFabrica>2015</aFabrica>
+          <marca>KIA MOTORS</marca>
+          <modelo>RIO 4 EX 1.4</modelo>
+          <numeroMotor>G4FAES742433</numeroMotor>
+          <numeroSerie>(NO INFORMADO)</numeroSerie>
+          <color>AZUL DEEP</color>
+          <tipoCombustible>GASOLINA</tipoCombustible>
+          <pesoBruto>1580.00 KILOS</pesoBruto>
+          <chasis>KNADN412AE6427607</chasis>
+          <vin>(NO INFORMADO)</vin>
+        </datosVehiculo>
+        <PropietariosActuales>
+          <datosPropietario>
+            <nombrePersonaNatural>
+              <nombres>ALAN JOHN</nombres>
+              <apellidoPaterno>MUÑOZ</apellidoPaterno>
+              <apellidoMaterno>OLIVA</apellidoMaterno>
+            </nombrePersonaNatural>
+            <razonSocial />
+            <run>
+              <numero>15729418</numero>
+              <dv>0</dv>
+            </run>
+          </datosPropietario>
+        </PropietariosActuales>
+      </certificadoAnotacionesVigentePatente>
+    </ns:getInfoResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

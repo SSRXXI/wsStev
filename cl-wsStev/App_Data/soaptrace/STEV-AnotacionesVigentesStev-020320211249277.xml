@@ -1,0 +1,80 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header>
+    <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <wsu:Timestamp wsu:Id="Timestamp-00d89b1c-6dea-47ce-8396-28163b4f8e9c" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <wsu:Created>2021-03-02T15:16:33Z</wsu:Created>
+        <wsu:Expires>2021-03-02T15:21:33Z</wsu:Expires>
+      </wsu:Timestamp>
+      <wsse:BinarySecurityToken wsu:Id="SecurityToken-64a7b3f1-267c-4d96-9edf-28163b4f408c" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">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</wsse:BinarySecurityToken>
+      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+          <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+          <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+          <Reference URI="#Id-311080e7-7cd4-4b37-b73b-28163b4f12c3">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>3r5xESTpRsq5AOjUwdT6nQrs6uE=</DigestValue>
+          </Reference>
+          <Reference URI="#Timestamp-00d89b1c-6dea-47ce-8396-28163b4f8e9c">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>EL3zdgRXL8lkNkGNVu8Xg2elw5k=</DigestValue>
+          </Reference>
+        </SignedInfo>
+        <SignatureValue>M1F7HqBwwC39zlgzl6Ce7wd84lOVxl0UBKVL3gNajxCZROA78Fa24K3700V2EJyYyFUeabUmMsRxsuNTAMfrjFZjrHIWrVXROy4Dro9ZmxmCd4WUQK4t3RwKk1itnhl66RiAXnw6VXPtgNpk5OE1g2p2WxEyVkD4KJLb/pLEwGwhVFS85iWNLfTmc8XRwGawhP7DeDbacVYW5loBtojWNPkK4AdepEUr4A0U6mujwk8I1oSsmOZjkwEPGhQFBE7tQkv8pCJBNoZHQO289P+X1zTelO6JlbHB1tooO681ml9IquyPaIVQhZ51770Rppz1y0FmsnCk/Bti33aR767dFA==</SignatureValue>
+        <dsig:KeyInfo xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+          <wsse:SecurityTokenReference xmlns="">
+            <wsse:Reference URI="#SecurityToken-64a7b3f1-267c-4d96-9edf-28163b4f408c" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" />
+          </wsse:SecurityTokenReference>
+        </dsig:KeyInfo>
+      </Signature>
+    </wsse:Security>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body wsu:Id="Id-311080e7-7cd4-4b37-b73b-28163b4f12c3" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <ns:getInfoResponse xmlns:ns="urn:ConsultaPID">
+      <codigoresp>1</codigoresp>
+      <glosa>EXISTE INFORMACION PARA LA PATENTE CONSULTADA</glosa>
+      <certificadoAnotacionesVigentePatente>
+        <datosVehiculo>
+          <tipo>TRACTOCAMION</tipo>
+          <aFabrica>2016</aFabrica>
+          <marca>FREIGHTLINER</marca>
+          <modelo>CASC 113 EPA 10</modelo>
+          <numeroMotor>471927S0370859</numeroMotor>
+          <numeroSerie>(NO INFORMADO)</numeroSerie>
+          <color>AZUL</color>
+          <tipoCombustible>DIESEL</tipoCombustible>
+          <pesoBruto>23608.00 KILOS</pesoBruto>
+          <chasis>3AKBGHDV2GSHN8214</chasis>
+          <vin>(NO INFORMADO)</vin>
+          <anotacion>TITULO MERA TENENCIA</anotacion>
+          <fechaRepertorio>
+            <fechaValida>2016-03-04</fechaValida>
+          </fechaRepertorio>
+          <acreedor />
+          <numeroDocumentoRol>74</numeroDocumentoRol>
+          <repertorio>ALAMEDA</repertorio>
+          <numeroRepertorio>114387</numeroRepertorio>
+        </datosVehiculo>
+        <PropietariosActuales>
+          <datosPropietario>
+            <nombrePersonaNatural>
+              <nombres />
+              <apellidoPaterno />
+              <apellidoMaterno />
+            </nombrePersonaNatural>
+            <razonSocial>SERVICIOS PESQUEROS ORTIZ Y HANANIA LIMI TADA</razonSocial>
+            <run>
+              <numero>77923940</numero>
+              <dv>3</dv>
+            </run>
+          </datosPropietario>
+        </PropietariosActuales>
+      </certificadoAnotacionesVigentePatente>
+    </ns:getInfoResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

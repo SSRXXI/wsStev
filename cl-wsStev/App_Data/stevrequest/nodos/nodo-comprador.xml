@@ -1,0 +1,19 @@
+﻿<compran>
+  <persona>
+    <calidad>param_comprador_calidad</calidad>
+    <runRut>param_comprador_rut</runRut>
+    <nombresRazon>param_comprador_nombre</nombresRazon>
+    <aPaterno>param_comprador_apellido_paterno</aPaterno>
+    <aMaterno>param_comprador_apellido_materno</aMaterno>
+    <Email>param_comprador_email</Email>
+  </persona>
+  <direccion>
+    <calle>param_comprador_calle</calle>
+    <ltrDomicilio>param_comprador_direccion</ltrDomicilio>
+    <nroDomicilio>param_comprador_nro_direccion</nroDomicilio>
+    <rDomicilio>param_comprador_resto_direccion</rDomicilio>
+    <telefono>param_comprador_telefono</telefono>
+    <comuna>param_comprador_comuna</comuna>
+    <cPostal>param_comprador_codigo_postal</cPostal>
+  </direccion>
+</compran>

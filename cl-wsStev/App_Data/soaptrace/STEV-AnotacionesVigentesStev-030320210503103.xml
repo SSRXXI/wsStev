@@ -1,0 +1,8 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Body>
+    <ns:getInfoResponse xmlns:ns="urn:ConsultaPID">
+      <codigoresp>-1</codigoresp>
+      <glosa>Error interno SRCeI: http://127.0.0.1:11033/cgi-bin/AGP/WSAGP.cgi:2: cvc-particle 3.1: in element {http://schemas.xmlsoap.org/soap/envelope/}Fault of type {http://schemas.xmlsoap.org/soap/envelope/}Fault, found &lt;/SOAP-ENV:Fault&gt; (in namespace http://schemas.xmlsoap.org/soap/envelope/), but next item should be any of [{http://schemas.xmlsoap.org/soap/envelope/}faultstring, faultstring]</glosa>
+    </ns:getInfoResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

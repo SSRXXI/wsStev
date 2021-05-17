@@ -1,0 +1,94 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header>
+    <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <wsu:Timestamp wsu:Id="Timestamp-b9be2437-b00c-4f39-b12a-28163b4f6987" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <wsu:Created>2020-11-13T22:55:36Z</wsu:Created>
+        <wsu:Expires>2020-11-13T23:00:36Z</wsu:Expires>
+      </wsu:Timestamp>
+      <wsse:BinarySecurityToken wsu:Id="SecurityToken-80728f29-1cbc-496c-9fa3-28163b4f5b15" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">MIIFgzCCBGugAwIBAgIMMXIoxt6Xnco3xr4rMA0GCSqGSIb3DQEBCwUAMGYxCzAJBgNVBAYTAkJFMRkwFwYDVQQKExBHbG9iYWxTaWduIG52LXNhMTwwOgYDVQQDEzNHbG9iYWxTaWduIE9yZ2FuaXphdGlvbiBWYWxpZGF0aW9uIENBIC0gU0hBMjU2IC0gRzIwHhcNMTcwNTMxMjEyNjA3WhcNMTkwNzA4MTUxMTAxWjCBtDELMAkGA1UEBhMCQ0wxETAPBgNVBAgTCFNhbnRpYWdvMREwDwYDVQQHEwhTYW50aWFnbzEvMC0GA1UECwwmU3ViZGlyZWNjacOzbiBkZSBFc3R1ZGlvcyB5IERlc2Fycm9sbG8xNDAyBgNVBAoTK1NlcnZpY2lvIGRlIFJlZ2lzdHJvIENpdmlsIGUgSWRlbnRpZmljYWNpb24xGDAWBgNVBAMTD2Rlc2F3cy5zcmNlaS5jbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMsDmyPILOXGxYf8tbfJJHKspXk5MUbOH9MCx82xmZSGT+4x2+zR28J5105b4oxXedlRBSscZFWrZbWykLbcR79AQWMmJJJ355SGG2o1O10cHhyAdCbatVdaAGU7aNsqCbJzPgv49LzGZtVRP5jbTnrFndcDF9vYABYmBifGH/fFht6diBv7ukJlXe5DZnuf4Hcm+yIeiowiAl0xYwNTCtslwi0VdMBDsXNPXjKv/lYP3J4trH9DULyYRiaU82Ea3+GgH71cxDkEFjEa6BqvlbuD2UPj/v4qaSpnMSriSvRwDKxD3xZfS4CYNS8YAV7m/V/rgpblxgrJaP0+0scBJ/UCAwEAAaOCAeAwggHcMA4GA1UdDwEB/wQEAwIFoDCBoAYIKwYBBQUHAQEEgZMwgZAwTQYIKwYBBQUHMAKGQWh0dHA6Ly9zZWN1cmUuZ2xvYmFsc2lnbi5jb20vY2FjZXJ0L2dzb3JnYW5pemF0aW9udmFsc2hhMmcycjEuY3J0MD8GCCsGAQUFBzABhjNodHRwOi8vb2NzcDIuZ2xvYmFsc2lnbi5jb20vZ3Nvcmdhbml6YXRpb252YWxzaGEyZzIwVgYDVR0gBE8wTTBBBgkrBgEEAaAyARQwNDAyBggrBgEFBQcCARYmaHR0cHM6Ly93d3cuZ2xvYmFsc2lnbi5jb20vcmVwb3NpdG9yeS8wCAYGZ4EMAQICMAkGA1UdEwQCMAAwSQYDVR0fBEIwQDA+oDygOoY4aHR0cDovL2NybC5nbG9iYWxzaWduLmNvbS9ncy9nc29yZ2FuaXphdGlvbnZhbHNoYTJnMi5jcmwwGgYDVR0RBBMwEYIPZGVzYXdzLnNyY2VpLmNsMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAdBgNVHQ4EFgQU/BchjCgSz5IlgA5n55DrwOFRReowHwYDVR0jBBgwFoAUlt5h8b0cFilTHMDMfTuDAEDmGnwwDQYJKoZIhvcNAQELBQADggEBAK7gwLqsBiRQO3sLupD2wpsW1JmReG7ShiroBiNqWGVe1/DZbhMyaRua+2Ou/YUKuXnGzdkiKZOGzIRw33KtYIc4WjkjzBw43brwpCc6MFd5bhZ19z28X+1PKIYMIOboNo1oQotuhWMXRCYAUo5Uc0yKAwXwNxbuw+u/B7rVifyMgR5hnfmvoXdwK7qvt17z9B54dIB1hof0/x8YwggUB0CHnRNz58Eyor7IVPr8IEMldq5XQ9hcI3dQ8XhGChi8FYvDuMtZNcsbjkD9KtJMDfnERZgzLKPFAKoFZrH34AvF7NP1t++UEoQJMVnefOcEIpBpMcjc7e/FPKJTD6hmL2g=</wsse:BinarySecurityToken>
+      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+          <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+          <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+          <Reference URI="#Id-b3caf601-1cab-42e4-b934-28163b4f51f1">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>0XFXYh3FZUpsjHDnLB3vfV+AYqU=</DigestValue>
+          </Reference>
+          <Reference URI="#Timestamp-b9be2437-b00c-4f39-b12a-28163b4f6987">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>yfx3TGTtuycReD0L/s/qwSG7bVU=</DigestValue>
+          </Reference>
+        </SignedInfo>
+        <SignatureValue>HP8+iezAZz8vhshuH+58vqbgC8OH5K8hRICv0UQ2LKFaNhBAwYLdvkj8BBhct4debBvDiRA4MB4UVwoIBK3zklv7UcjKVjEXTxRgV70si1XPuCdyNxw16InAWDBxifVC1gcwMYlNwOVfFD9+3a/HwuZaT995VL6xg+OZt7DoEA/fm5X/yw7EdQ/WvEboY9M415F74fFod76czOE3sEjUvFLw+eyCQyCdtdBrTz9esRZWv2PkxCjZmq4IZUMBkEPfTSc3xfrorLmRgaDpTr8GZ+iD7flSLpHrqSKWDHrgURmoTrE7fqEr01L/Y4zNGQA36VVn0TNWh8ljiwBL52an1Q==</SignatureValue>
+        <dsig:KeyInfo xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+          <wsse:SecurityTokenReference xmlns="">
+            <wsse:Reference URI="#SecurityToken-80728f29-1cbc-496c-9fa3-28163b4f5b15" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" />
+          </wsse:SecurityTokenReference>
+        </dsig:KeyInfo>
+      </Signature>
+    </wsse:Security>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body wsu:Id="Id-b3caf601-1cab-42e4-b934-28163b4f51f1" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <ns:getInfoResponse xmlns:ns="urn:ConsultaPID">
+      <codigoresp>1</codigoresp>
+      <glosa>EXISTE INFORMACION PARA LA PATENTE CONSULTADA</glosa>
+      <certificadoAnotacionesVigentePatente>
+        <datosVehiculo>
+          <tipo>AUTOMOVIL</tipo>
+          <aFabrica>2018</aFabrica>
+          <marca>VOLKSWAGEN</marca>
+          <modelo>POLO 1.6</modelo>
+          <numeroMotor>CWS 077531</numeroMotor>
+          <numeroSerie>(NO INFORMADO)</numeroSerie>
+          <color>BLANCO CANDY</color>
+          <tipoCombustible>GASOLINA</tipoCombustible>
+          <pesoBruto>1520.00 KILOS</pesoBruto>
+          <chasis>9BWAL5BZ0KP510238</chasis>
+          <vin>9BWAL5BZ0KP510238</vin>
+          <anotacion>PRENDA</anotacion>
+          <fechaRepertorio>
+            <fechaValida>2018-09-13</fechaValida>
+          </fechaRepertorio>
+          <acreedor>FORUM SERVICIOS FINANCIEROS S.A.</acreedor>
+          <numeroDocumentoRol>322464-2018</numeroDocumentoRol>
+          <repertorio>UNIDAD DE PRENDAS SIN DESPLAZAMIENTO</repertorio>
+          <numeroRepertorio>375763</numeroRepertorio>
+        </datosVehiculo>
+        <datosVehiculo>
+          <tipo>AUTOMOVIL</tipo>
+          <aFabrica>2018</aFabrica>
+          <marca>VOLKSWAGEN</marca>
+          <modelo>POLO 1.6</modelo>
+          <numeroMotor>CWS 077531</numeroMotor>
+          <numeroSerie>(NO INFORMADO)</numeroSerie>
+          <color>BLANCO CANDY</color>
+          <tipoCombustible>GASOLINA</tipoCombustible>
+          <pesoBruto>1520.00 KILOS</pesoBruto>
+          <chasis>9BWAL5BZ0KP510238</chasis>
+          <vin>9BWAL5BZ0KP510238</vin>
+          <anotacion>PROHIBICION DE ENAJENAR</anotacion>
+          <fechaRepertorio>
+            <fechaValida>2018-09-13</fechaValida>
+          </fechaRepertorio>
+          <acreedor>FORUM SERVICIOS FINANCIEROS S.A.</acreedor>
+          <numeroDocumentoRol>322464-2018</numeroDocumentoRol>
+          <repertorio>UNIDAD DE PRENDAS SIN DESPLAZAMIENTO</repertorio>
+          <numeroRepertorio>375764</numeroRepertorio>
+        </datosVehiculo>
+        <PropietariosActuales>
+          <datosPropietario>
+            <fechaAdquisicion>
+              <fechaValida>2018-08-14</fechaValida>
+            </fechaAdquisicion>
+          </datosPropietario>
+        </PropietariosActuales>
+      </certificadoAnotacionesVigentePatente>
+    </ns:getInfoResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

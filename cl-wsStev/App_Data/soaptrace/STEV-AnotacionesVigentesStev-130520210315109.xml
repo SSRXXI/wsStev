@@ -1,0 +1,65 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header>
+    <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <wsu:Timestamp wsu:Id="Timestamp-a6171d6c-737e-4672-9671-f9a8cc56ce5a" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <wsu:Created>2021-05-13T19:00:48Z</wsu:Created>
+        <wsu:Expires>2021-05-13T19:05:48Z</wsu:Expires>
+      </wsu:Timestamp>
+      <wsse:BinarySecurityToken wsu:Id="SecurityToken-abd42d26-d524-4255-9cca-f9a8cc560f68" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">MIIG2DCCBcCgAwIBAgIMTsvCGKS8zipwmWGCMA0GCSqGSIb3DQEBCwUAMFAxCzAJBgNVBAYTAkJFMRkwFwYDVQQKExBHbG9iYWxTaWduIG52LXNhMSYwJAYDVQQDEx1HbG9iYWxTaWduIFJTQSBPViBTU0wgQ0EgMjAxODAeFw0yMTAyMjQxMzI1MTlaFw0yMjAzMjgxMzI1MTlaMIG3MQswCQYDVQQGEwJDTDERMA8GA1UECBMIU2FudGlhZ28xETAPBgNVBAcTCFNhbnRpYWdvMS8wLQYDVQQLDCZTdWJkaXJlY2Npw7NuIGRlIEVzdHVkaW9zIHkgRGVzYXJyb2xsbzE0MDIGA1UEChMrU2VydmljaW8gZGUgUmVnaXN0cm8gQ2l2aWwgZSBJZGVudGlmaWNhY2lvbjEbMBkGA1UEAxMSc2VydmVsZWMxLnNyY2VpLmNsMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqvaj+ltdYk8IPPifFbfpaEWtQLotEu/zvm53MkW80C/xujLWibFxJrIedUby4VMJf/ZLQrFz7+OeNb9zAmgeHj3PKZ+qlzdHiWLUrOvUzcDTQnYDFWMwFgE0Kr+K36DbLl1VUac0whIq+rhUKDRHBuf7zcz7bCREwhKt8IPsIs6Ozj5VXQ2zuzZSJ9WmMb/bOzODzNxpF5KjgRqS987GmM1K7Ji9s/RyeJU0HwUnLouhKJh8QWKQzbpJvRMntSjH9pUQz8Si3pN1zmwutrRo+mF30GYJS8wzg8py/Gq0wB0Lbt+QWx5xs+SrX67kj3CPO+uF3KL1Dof29GlLv1vl2wIDAQABo4IDSDCCA0QwDgYDVR0PAQH/BAQDAgWgMIGOBggrBgEFBQcBAQSBgTB/MEQGCCsGAQUFBzAChjhodHRwOi8vc2VjdXJlLmdsb2JhbHNpZ24uY29tL2NhY2VydC9nc3JzYW92c3NsY2EyMDE4LmNydDA3BggrBgEFBQcwAYYraHR0cDovL29jc3AuZ2xvYmFsc2lnbi5jb20vZ3Nyc2FvdnNzbGNhMjAxODBWBgNVHSAETzBNMEEGCSsGAQQBoDIBFDA0MDIGCCsGAQUFBwIBFiZodHRwczovL3d3dy5nbG9iYWxzaWduLmNvbS9yZXBvc2l0b3J5LzAIBgZngQwBAgIwCQYDVR0TBAIwADA/BgNVHR8EODA2MDSgMqAwhi5odHRwOi8vY3JsLmdsb2JhbHNpZ24uY29tL2dzcnNhb3Zzc2xjYTIwMTguY3JsMB0GA1UdEQQWMBSCEnNlcnZlbGVjMS5zcmNlaS5jbDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwHwYDVR0jBBgwFoAU+O9/8s14Z6jeb48kjYjxhwMCs+swHQYDVR0OBBYEFHjWt5ZvC8zfd41sSDvdWroo5lueMIIBfQYKKwYBBAHWeQIEAgSCAW0EggFpAWcAdgBvU3asMfAxGdiZAKRRFf93FRwR2QLBACkGjbIImjfZEwAAAXfUNyoLAAAEAwBHMEUCIQCiXupfT/fVMKZt3aqmY5SqLT8cydsl/e+YHqmb2AXp9gIgT+gikXycaqSCUSW2V50o1qqf8rkVCKPdht+cYMKxpq4AdgApeb7wnjk5IfBWc59jpXflvld9nGAK+PlNXSZcJV3HhAAAAXfUNyuJAAAEAwBHMEUCIQC50PhGJfo0SB3gCBcsZ87pgWp0T5jgX9moNKkjkn2x4AIgFTCssEH4ayI0clNLcrGio3DYwOgMK2vwk3wWa575Rh8AdQBRo7D1/QF5nFZtuDd4jwykeswbJ8v3nohCmg3+1IsF5QAAAXfUNytLAAAEAwBGMEQCIA/yMwikVrMQNHXlvomOSZykotX08eUNxrHQiokrpVk9AiBbD8917w+oVR9DnaXe8r5ssk1GdOJZvSbFZQAIpV4QmDANBgkqhkiG9w0BAQsFAAOCAQEApzoTQunrBdZEFnWl44DwVRfwYKK6aQD4grYAAHIh/XRq65w2rR5wozI5gPWBH9hvIquVABvRK8nSKZGgPjRbmwpHVYLITt0Yap1wOrerEdtf+LZiFJegzWcEBEm1GVijwxPuEIW9aj5rjJSv+hF1iyuOwnUTRCnBPTGekF3BQxqY8S1zWduRkQpghPVJllqS5voNR0bidCZcpDRpfl+tNIpCrOkgWE4Ql0FIV/Jl56plK7c+MHCr9dHrP7GqiD75wu+fHe1A9bn15Ec2RmR8I9T1R3DeH766OWqNzUql5qOkFfABJjFeh4NTF+grmUxiw8RuN8vlTEyYdyNNYGPfOA==</wsse:BinarySecurityToken>
+      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+          <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+          <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+          <Reference URI="#Id-020b7443-97b2-4db9-902f-f9a8cc564223">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>1YP9YKUySVZEvq5/YmjX1PXArno=</DigestValue>
+          </Reference>
+          <Reference URI="#Timestamp-a6171d6c-737e-4672-9671-f9a8cc56ce5a">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>X1NrXaRzK+8659SlZEqmQ6+GIkg=</DigestValue>
+          </Reference>
+        </SignedInfo>
+        <SignatureValue>PGWp2oXmHuSefsbLW3uIXLTNf9ze5wL3qCi8qLKxZNuS+dbQcsVCbY5TkToJajjlZ2Kpdj5xVs8NDg9c7+r6c1EILGpBAxZvWlIIBKDtNd1SDvwHBhC0Q38QaEFMjFVsz1hdm6cwBA4ogaAY6e5WZEG1rdoqdcAHLL3PyNR6/Sr3sAvi2sUj0AXN0RfIGE03F048BurIi07SYVOauF/ITiadpfmR9KwSHu7hGYjE1D3sv7xRRWKZG9gQ5xfd/gvshx1gVc1uLatXD+9qfFbpzdwdsLdiKJJ60Z6vwD/xY4vJfigUdylykh0yDfrntN0QHZTStukiScoVyENPA6ECkw==</SignatureValue>
+        <dsig:KeyInfo xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+          <wsse:SecurityTokenReference xmlns="">
+            <wsse:Reference URI="#SecurityToken-abd42d26-d524-4255-9cca-f9a8cc560f68" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" />
+          </wsse:SecurityTokenReference>
+        </dsig:KeyInfo>
+      </Signature>
+    </wsse:Security>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body wsu:Id="Id-020b7443-97b2-4db9-902f-f9a8cc564223" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <ns:getInfoResponse xmlns:ns="urn:ConsultaPID">
+      <codigoresp>1</codigoresp>
+      <glosa>EXISTE INFORMACION PARA LA PATENTE CONSULTADA</glosa>
+      <certificadoAnotacionesVigentePatente>
+        <datosVehiculo>
+          <tipo>AUTOMOVIL</tipo>
+          <aFabrica>2018</aFabrica>
+          <marca>AUDI</marca>
+          <modelo>S5 CABRIO TFSI 4X4 3.0 AUT</modelo>
+          <numeroMotor>CRE 130067</numeroMotor>
+          <numeroSerie>(NO INFORMADO)</numeroSerie>
+          <color>GRIS MONZON NEGRO</color>
+          <tipoCombustible>GASOLINA</tipoCombustible>
+          <pesoBruto>2380.00 KILOS</pesoBruto>
+          <chasis>WAUZZZ8FXHN02456</chasis>
+          <vin>(NO INFORMADO)</vin>
+        </datosVehiculo>
+        <PropietariosActuales>
+          <datosPropietario>
+            <fechaAdquisicion>
+              <fechaValida>2021-04-13</fechaValida>
+            </fechaAdquisicion>
+          </datosPropietario>
+        </PropietariosActuales>
+      </certificadoAnotacionesVigentePatente>
+    </ns:getInfoResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

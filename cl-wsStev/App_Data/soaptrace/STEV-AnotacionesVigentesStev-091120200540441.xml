@@ -1,0 +1,44 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header>
+    <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <wsu:Timestamp wsu:Id="Timestamp-7b3b64e6-1a90-4f1b-abe7-28163b4f12a3" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <wsu:Created>2020-11-09T20:40:39Z</wsu:Created>
+        <wsu:Expires>2020-11-09T20:45:39Z</wsu:Expires>
+      </wsu:Timestamp>
+      <wsse:BinarySecurityToken wsu:Id="SecurityToken-33305556-d6d8-4c40-a6c5-28163b4f1efd" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">MIIFgzCCBGugAwIBAgIMMXIoxt6Xnco3xr4rMA0GCSqGSIb3DQEBCwUAMGYxCzAJBgNVBAYTAkJFMRkwFwYDVQQKExBHbG9iYWxTaWduIG52LXNhMTwwOgYDVQQDEzNHbG9iYWxTaWduIE9yZ2FuaXphdGlvbiBWYWxpZGF0aW9uIENBIC0gU0hBMjU2IC0gRzIwHhcNMTcwNTMxMjEyNjA3WhcNMTkwNzA4MTUxMTAxWjCBtDELMAkGA1UEBhMCQ0wxETAPBgNVBAgTCFNhbnRpYWdvMREwDwYDVQQHEwhTYW50aWFnbzEvMC0GA1UECwwmU3ViZGlyZWNjacOzbiBkZSBFc3R1ZGlvcyB5IERlc2Fycm9sbG8xNDAyBgNVBAoTK1NlcnZpY2lvIGRlIFJlZ2lzdHJvIENpdmlsIGUgSWRlbnRpZmljYWNpb24xGDAWBgNVBAMTD2Rlc2F3cy5zcmNlaS5jbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMsDmyPILOXGxYf8tbfJJHKspXk5MUbOH9MCx82xmZSGT+4x2+zR28J5105b4oxXedlRBSscZFWrZbWykLbcR79AQWMmJJJ355SGG2o1O10cHhyAdCbatVdaAGU7aNsqCbJzPgv49LzGZtVRP5jbTnrFndcDF9vYABYmBifGH/fFht6diBv7ukJlXe5DZnuf4Hcm+yIeiowiAl0xYwNTCtslwi0VdMBDsXNPXjKv/lYP3J4trH9DULyYRiaU82Ea3+GgH71cxDkEFjEa6BqvlbuD2UPj/v4qaSpnMSriSvRwDKxD3xZfS4CYNS8YAV7m/V/rgpblxgrJaP0+0scBJ/UCAwEAAaOCAeAwggHcMA4GA1UdDwEB/wQEAwIFoDCBoAYIKwYBBQUHAQEEgZMwgZAwTQYIKwYBBQUHMAKGQWh0dHA6Ly9zZWN1cmUuZ2xvYmFsc2lnbi5jb20vY2FjZXJ0L2dzb3JnYW5pemF0aW9udmFsc2hhMmcycjEuY3J0MD8GCCsGAQUFBzABhjNodHRwOi8vb2NzcDIuZ2xvYmFsc2lnbi5jb20vZ3Nvcmdhbml6YXRpb252YWxzaGEyZzIwVgYDVR0gBE8wTTBBBgkrBgEEAaAyARQwNDAyBggrBgEFBQcCARYmaHR0cHM6Ly93d3cuZ2xvYmFsc2lnbi5jb20vcmVwb3NpdG9yeS8wCAYGZ4EMAQICMAkGA1UdEwQCMAAwSQYDVR0fBEIwQDA+oDygOoY4aHR0cDovL2NybC5nbG9iYWxzaWduLmNvbS9ncy9nc29yZ2FuaXphdGlvbnZhbHNoYTJnMi5jcmwwGgYDVR0RBBMwEYIPZGVzYXdzLnNyY2VpLmNsMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAdBgNVHQ4EFgQU/BchjCgSz5IlgA5n55DrwOFRReowHwYDVR0jBBgwFoAUlt5h8b0cFilTHMDMfTuDAEDmGnwwDQYJKoZIhvcNAQELBQADggEBAK7gwLqsBiRQO3sLupD2wpsW1JmReG7ShiroBiNqWGVe1/DZbhMyaRua+2Ou/YUKuXnGzdkiKZOGzIRw33KtYIc4WjkjzBw43brwpCc6MFd5bhZ19z28X+1PKIYMIOboNo1oQotuhWMXRCYAUo5Uc0yKAwXwNxbuw+u/B7rVifyMgR5hnfmvoXdwK7qvt17z9B54dIB1hof0/x8YwggUB0CHnRNz58Eyor7IVPr8IEMldq5XQ9hcI3dQ8XhGChi8FYvDuMtZNcsbjkD9KtJMDfnERZgzLKPFAKoFZrH34AvF7NP1t++UEoQJMVnefOcEIpBpMcjc7e/FPKJTD6hmL2g=</wsse:BinarySecurityToken>
+      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+          <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+          <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+          <Reference URI="#Id-5a8497c9-4c1f-451b-a066-28163b4fecee">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>StmkkLPWdnIXdgOAFC77dZ2bDII=</DigestValue>
+          </Reference>
+          <Reference URI="#Timestamp-7b3b64e6-1a90-4f1b-abe7-28163b4f12a3">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>0IHong2TeaQljpyHa2P+hMuTo34=</DigestValue>
+          </Reference>
+        </SignedInfo>
+        <SignatureValue>HypJefeZMEZaOZ/xDnYpYSO51KO/y/KwZ3P0UMzSFgTY04DSRXRlpY9BrdW+ow5AYBDGcbIxOi1+E1Fwlm0TTycyVbGoTk2kk8tIAN/bd9WEZStpa4ydAq6dVW3TB/6myikpC9uDA4kz23zfLDXUQXFEezvdFKVCpGhiTMsDq+IuCjF6cjCRL5jUx5bGOT8k5wZm4YU0Pb1rI/d+eSyoDL5DyYK8degWamm1XAmXLNK84/cx6ghePOtohXnK/J5ZfVOom3syZbymcCGe9209KZ/2qBM0pUqIKzAINWhcTRF6ozCDQQ/E1UzH6Qr9BXO8LSbkxtC5qkP/o9kdaXALAA==</SignatureValue>
+        <dsig:KeyInfo xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+          <wsse:SecurityTokenReference xmlns="">
+            <wsse:Reference URI="#SecurityToken-33305556-d6d8-4c40-a6c5-28163b4f1efd" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" />
+          </wsse:SecurityTokenReference>
+        </dsig:KeyInfo>
+      </Signature>
+    </wsse:Security>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body wsu:Id="Id-5a8497c9-4c1f-451b-a066-28163b4fecee" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <ns:getInfoResponse xmlns:ns="urn:ConsultaPID">
+      <codigoresp>00</codigoresp>
+      <glosa>LA PATENTE CONSULTADA NO FUE ENCONTRADA</glosa>
+      <certificadoAnotacionesVigentePatente />
+    </ns:getInfoResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

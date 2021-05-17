@@ -1,0 +1,101 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header>
+    <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <wsu:Timestamp wsu:Id="Timestamp-f9b6396f-2fbf-4437-ae87-28163b4f03de" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+        <wsu:Created>2021-03-02T16:04:19Z</wsu:Created>
+        <wsu:Expires>2021-03-02T16:09:19Z</wsu:Expires>
+      </wsu:Timestamp>
+      <wsse:BinarySecurityToken wsu:Id="SecurityToken-be02b294-13b3-4ee7-949e-28163b4fa028" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">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</wsse:BinarySecurityToken>
+      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+          <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+          <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+          <Reference URI="#Id-3d521659-23da-426d-8f9e-28163b4f7d8a">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>WvtfL9ZuJam8OwXeEXx66eGtFFA=</DigestValue>
+          </Reference>
+          <Reference URI="#Timestamp-f9b6396f-2fbf-4437-ae87-28163b4f03de">
+            <Transforms>
+              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>ThaaIsF00CtHx4oA6dYeaB4g9zI=</DigestValue>
+          </Reference>
+        </SignedInfo>
+        <SignatureValue>otWXK+cFgjA4KP/1YD/tbx82V3I3JeLXZGhi7HVQ1H15WdwC9WmdzK2+jenoNujvl8QKnR6iI/c7J85X5wzRPTBRBFEthtjfC9VZo0wot6MF5NWqGw2GkZ0GTCRsTbOjwNwAdg07Xadi/MA52V+ctewxTCdn8kD4PySxbtnGE16bfV4XnjFnRkczSB3Lmk8R7oHRx9JJsgwpon73PJQD1Jf3wyOAL9/J9eVsEdB54BPneO4jKjqwdn7hQkztuZ1k2RpEFvEG+s5nTfl/RhQsrlRJt+8aw0V74wM2Hmp7SlLGdGU7kKgzKJ1XgAiHZn99eSyqJf+Fm+9UxaPJ7779BA==</SignatureValue>
+        <dsig:KeyInfo xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+          <wsse:SecurityTokenReference xmlns="">
+            <wsse:Reference URI="#SecurityToken-be02b294-13b3-4ee7-949e-28163b4fa028" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" />
+          </wsse:SecurityTokenReference>
+        </dsig:KeyInfo>
+      </Signature>
+    </wsse:Security>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body wsu:Id="Id-3d521659-23da-426d-8f9e-28163b4f7d8a" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <ns:getInfoResponse xmlns:ns="urn:ConsultaPID">
+      <codigoresp>1</codigoresp>
+      <glosa>EXISTE INFORMACION PARA LA PATENTE CONSULTADA</glosa>
+      <certificadoAnotacionesVigentePatente>
+        <datosVehiculo>
+          <tipo>TRACTOCAMION</tipo>
+          <aFabrica>2016</aFabrica>
+          <marca>FREIGHTLINER</marca>
+          <modelo>CASC 125</modelo>
+          <numeroMotor>06R1063862</numeroMotor>
+          <numeroSerie>(NO INFORMADO)</numeroSerie>
+          <color>VERDE AZULADO METALICO</color>
+          <tipoCombustible>DIESEL</tipoCombustible>
+          <pesoBruto>26862.00 KILOS</pesoBruto>
+          <chasis>3AKJGLCK1GSGK0993</chasis>
+          <vin>(NO INFORMADO)</vin>
+          <anotacion>PRENDA</anotacion>
+          <fechaRepertorio>
+            <fechaValida>2020-07-20</fechaValida>
+          </fechaRepertorio>
+          <acreedor>BK SPA</acreedor>
+          <numeroDocumentoRol>203704-2020</numeroDocumentoRol>
+          <repertorio>UNIDAD DE PRENDAS SIN DESPLAZAMIENTO</repertorio>
+          <numeroRepertorio>228665</numeroRepertorio>
+        </datosVehiculo>
+        <datosVehiculo>
+          <tipo>TRACTOCAMION</tipo>
+          <aFabrica>2016</aFabrica>
+          <marca>FREIGHTLINER</marca>
+          <modelo>CASC 125</modelo>
+          <numeroMotor>06R1063862</numeroMotor>
+          <numeroSerie>(NO INFORMADO)</numeroSerie>
+          <color>VERDE AZULADO METALICO</color>
+          <tipoCombustible>DIESEL</tipoCombustible>
+          <pesoBruto>26862.00 KILOS</pesoBruto>
+          <chasis>3AKJGLCK1GSGK0993</chasis>
+          <vin>(NO INFORMADO)</vin>
+          <anotacion>PROHIBICION DE ENAJENAR</anotacion>
+          <fechaRepertorio>
+            <fechaValida>2020-07-20</fechaValida>
+          </fechaRepertorio>
+          <acreedor>BK SPA</acreedor>
+          <numeroDocumentoRol>203704-2020</numeroDocumentoRol>
+          <repertorio>UNIDAD DE PRENDAS SIN DESPLAZAMIENTO</repertorio>
+          <numeroRepertorio>228666</numeroRepertorio>
+        </datosVehiculo>
+        <PropietariosActuales>
+          <datosPropietario>
+            <nombrePersonaNatural>
+              <nombres />
+              <apellidoPaterno />
+              <apellidoMaterno />
+            </nombrePersonaNatural>
+            <razonSocial>TRANSPORTES CINCO LTDA </razonSocial>
+            <run>
+              <numero>79642190</numero>
+              <dv>8</dv>
+            </run>
+          </datosPropietario>
+        </PropietariosActuales>
+      </certificadoAnotacionesVigentePatente>
+    </ns:getInfoResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

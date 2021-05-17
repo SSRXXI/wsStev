@@ -1,0 +1,12 @@
+﻿<urn:upload_file  xmlns:urn="urn:uploadwsdl">
+  <consumidor>param_consumidor</consumidor>
+  <servicio>param_servicio</servicio>
+  <file>param_file</file>
+  <patente>param_patente</patente>
+  <nro>param_nro</nro>
+  <tipo_sol>param_tipo_sol</tipo_sol>
+  <tipo_doc>param_tipo_doc</tipo_doc>
+  <clasificacion>param_clasificacion</clasificacion>
+  <fecha_ing>param_fecha_ing</fecha_ing>
+  <nombre>param_nombre</nombre>
+</urn:upload_file>

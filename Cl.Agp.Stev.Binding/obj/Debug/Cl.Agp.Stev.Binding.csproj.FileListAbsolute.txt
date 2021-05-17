@@ -1,0 +1,6 @@
+D:\AGP\wsStev\Cl.Agp.Stev.Binding\bin\Debug\Cl.Agp.Stev.Binding.dll
+D:\AGP\wsStev\Cl.Agp.Stev.Binding\bin\Debug\Cl.Agp.Stev.Binding.pdb
+D:\AGP\wsStev\Cl.Agp.Stev.Binding\obj\Debug\Cl.Agp.Stev.Binding.csprojAssemblyReference.cache
+D:\AGP\wsStev\Cl.Agp.Stev.Binding\obj\Debug\Cl.Agp.Stev.Binding.csproj.CoreCompileInputs.cache
+D:\AGP\wsStev\Cl.Agp.Stev.Binding\obj\Debug\Cl.Agp.Stev.Binding.dll
+D:\AGP\wsStev\Cl.Agp.Stev.Binding\obj\Debug\Cl.Agp.Stev.Binding.pdb

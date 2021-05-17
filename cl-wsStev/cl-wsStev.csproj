@@ -1,0 +1,453 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{78585F34-07C0-4302-9253-F1F07C0E8A6D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cl_wsStev</RootNamespace>
+    <AssemblyName>cl-wsStev</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44304</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.12\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Xml, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Xml.4.7.0\lib\net461\System.Security.Cryptography.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\certificado\ANOTAC-soapui-project.xml" />
+    <Content Include="App_Data\certificado\LimitacionSRCEI-soapui-project.xml" />
+    <Content Include="App_Data\certificado\PI-A-Vigente-soapui-project.xml" />
+    <Content Include="App_Data\certificado\SOFTLAND--REPARO---NO-RESPUESTA-soapui-project.xml" />
+    <Content Include="App_Data\certificado\STEVPRUEBAS-soapui-project.xml" />
+    <Content Include="App_Data\Respuesta_CERAVGT_AGP.xml" />
+    <Content Include="App_Data\RESPUESTA_LimTransf.xml" />
+    <Content Include="App_Data\RESPUESTA_PIDF_CreaStev.xml" />
+    <Content Include="App_Data\Respuesta_Transferencia.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-020320210104220.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-020320210134044.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-020320211157548.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-020320211159249.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-020320211208317.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-020320211210261.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-020320211216456.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-020320211249277.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-020320211250299.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-020320211259404.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-030320210357409.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-030320210408265.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-030320210458038.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-030320210503103.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-030320210645391.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-051120200456543.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-090320210215166.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-090320210246358.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-090320210411048.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-091120200539526.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-091120200539543.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-091120200540397.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-091120200540441.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-091120200541042.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-091120200541144.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-091120200541186.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-091120200541243.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-100320210105276.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-100320210107285.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-100320210107382.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-100320210107447.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-100320210107476.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-100320210117438.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-100320210141244.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-100320210143249.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-100320210320178.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-100320210357000.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-100320210359257.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-100320211133220.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-100320211156255.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-100320211241264.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-100320211245028.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-100320211247343.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-100320211254568.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-111120200113351.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-111120200113406.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-121120200101139.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-121120200105156.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-121120200105493.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-121120200107437.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-121120200425326.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-121120200425412.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-121120200426243.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-121120200426430.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-121120200427046.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-121120200721324.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-121120200721399.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-121120200721431.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-121120200726131.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-121120200739227.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-121120200739342.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-121120201257381.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-121120201258173.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-130520210216073.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-130520210300493.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-130520210315109.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-130520210330424.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-130520210340488.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-130520210350090.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-130520210516221.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-130520210522465.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-130520210528125.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-130520210529570.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-130520210537291.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-130520211132571.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-130520211142001.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-130520211146155.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-130520211152439.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-130520211159279.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-130520211214499.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-131120200728396.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-131120200739264.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-131120200741013.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-131120200741344.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-131120200747003.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-131120200747409.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-131120200749066.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-131120200752419.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-131120200755368.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-131120200756079.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-131120200756322.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-131120200756395.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-131120200759489.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-140520210206155.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-140520210213419.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-140520210216588.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-140520210218596.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-140520210239105.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-140520210251186.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-140520210445056.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-140520210454594.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-140520210455418.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-140520210524354.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-140520210525524.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-140520210556385.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-140520211240337.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-160520210514450.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-161120201242440.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-200220210832090.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-200220210834566.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-210220210944453.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-220220210406561.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-220220211146242.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-260220210316016.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-260220210319581.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-260220210320416.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-260220210330395.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-260220210332175.xml" />
+    <Content Include="App_Data\soaptrace\STEV-AnotacionesVigentesStev-260220210335167.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-040520210633375.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-040520210650019.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-040520210834182.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-050320211247490.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-050520210122249.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-050520210158087.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-050520210202407.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-050520210212013.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-050520210214541.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-051120200457409.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-051120200458411.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-060520210135128.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320210123226.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320210126308.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320210127594.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320210131174.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320210313032.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320210313241.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320210353407.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320210358449.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320210358454.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320211145246.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320211145247.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320211147512.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320211157533.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320211157545.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320211200563.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320211205053.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320211205111.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320211214047.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320211226425.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320211226465.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-080320211249400.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-090320211128448.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-090320211130316.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-090320211130327.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-130520210155370.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-130520210603445.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-130520211255450.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-140520210707008.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-140520210721025.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-160320210346491.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-160320210616173.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-160520210447479.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CertificadoTransferencia-170320210501557.xml" />
+    <Content Include="App_Data\soaptrace\STEV-ConsultaLimitacion-140520210716520.xml" />
+    <Content Include="App_Data\soaptrace\STEV-ConsultaLimitacion-140520210755536.xml" />
+    <Content Include="App_Data\soaptrace\STEV-ConsultaLimitacion-160320210616355.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-010320210142119.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-010320211014569.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-010320211112517.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-010320211220010.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-010320211230064.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-020320210101063.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-020320210134236.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-020320211200482.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-020320211212031.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-020320211249309.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-030320210408317.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-030320210503153.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-030320210704180.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-030320210802351.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-030320210820393.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-030320210828072.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-030320210837017.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-030320211001520.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-030320211039156.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-040320210141242.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-040320210356067.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-040320210424176.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-040320210834543.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-040520210143330.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-040520210220598.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-040520210344480.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-040520210520593.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-050320210102396.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-060520210120368.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-060520210126493.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-080320210358301.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-080320210503092.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-080320211135245.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-090320211130183.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-110520210655255.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-130520210526110.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-130520210536467.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-130520211222226.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-140520210206529.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-140520210445245.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-140520211241149.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-160320210346386.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-160320210433008.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-170320210429259.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-170320210458537.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-170320211232189.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-170320211233024.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-210220210941421.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-220220210406561.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-250220210652141.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-250220210719527.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-250220210804182.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-250220210816413.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-260220210256422.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-260220211157111.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-260220211224032.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-260320211241453.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-270220210806198.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-270220210811428.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-270220210816313.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-270220210831406.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-270220210833579.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-270220210837092.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-270220210911019.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-270220211013504.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-270220211119412.xml" />
+    <Content Include="App_Data\soaptrace\STEV-CreateStev-270220211155355.xml" />
+    <Content Include="App_Data\soaptrace\STEV-LimitStev-.xml" />
+    <Content Include="App_Data\soaptrace\STEV-LimitStev-050320211247492.xml" />
+    <Content Include="App_Data\soaptrace\STEV-LimitStev-050320211252326.xml" />
+    <Content Include="App_Data\soaptrace\STEV-LimitStev-140520210452120.xml" />
+    <Content Include="App_Data\soaptrace\STEV-LimitStev-160320210837518.xml" />
+    <Content Include="App_Data\soaptrace\STEV-LimitStev-160320210839481.xml" />
+    <Content Include="App_Data\soaptrace\STEV-LimitStev-160320210840117.xml" />
+    <Content Include="App_Data\soaptrace\STEV-LimitStev-160320210847538.xml" />
+    <Content Include="App_Data\soaptrace\STEV-LimitStev-160320210847539.xml" />
+    <Content Include="App_Data\soaptrace\STEV-LimitStev-160320210926075.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-020320210103241.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-020320211208363.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-020320211249459.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-050320210126285.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-050320210147292.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-050320210156353.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-050520210102064.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-050520210102340.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-050520211255226.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-060520210129565.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-060520210130155.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-060520210130368.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-080320211138434.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-080320211141040.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-100320210202371.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-100320210202374.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-100320210202378.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-130520210408302.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-130520210408390.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-130520210408470.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-130520210541263.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-130520210541331.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-130520210541401.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-130520210541524.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-130520211243358.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-130520211244114.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-130520211244341.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-140520210528558.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-140520210529029.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-140520210529083.xml" />
+    <Content Include="App_Data\soaptrace\STEV-UploadFile-140520210529187.xml" />
+    <Content Include="App_Data\stevrequest\CCAV.xml" />
+    <Content Include="App_Data\stevrequest\CCD.xml" />
+    <Content Include="App_Data\stevrequest\CRLIMSVT.xml" />
+    <Content Include="App_Data\stevrequest\CRSTV.xml" />
+    <Content Include="App_Data\stevrequest\CSCERT.xml" />
+    <Content Include="App_Data\stevrequest\CSLIM.xml" />
+    <Content Include="App_Data\stevrequest\ESOT.xml" />
+    <Content Include="App_Data\stevrequest\nodos\nodo-comprador.xml" />
+    <Content Include="App_Data\stevrequest\nodos\nodo-comunidad.xml" />
+    <Content Include="App_Data\stevrequest\nodos\nodo-direccion.xml" />
+    <Content Include="App_Data\stevrequest\nodos\nodo-listado-compradores.xml" />
+    <Content Include="App_Data\stevrequest\nodos\nodo-persona.xml" />
+    <Content Include="App_Data\stevrequest\nodos\nodo-re-ingreso.xml" />
+    <Content Include="StevAgp.asmx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StevAgp.asmx.cs">
+      <DependentUpon>StevAgp.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\certificado\8358320-7.pfx" />
+    <Content Include="App_Data\certificado\Certificado 99.rar" />
+    <Content Include="App_Data\certificado\Cetificado RM.cer" />
+    <Content Include="App_Data\certificado\Firma RM 2020.pfx" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cl.Agp.Stev.Binding\Cl.Agp.Stev.Binding.csproj">
+      <Project>{9d7ba14e-3496-4565-be4d-92e1d87f5f45}</Project>
+      <Name>Cl.Agp.Stev.Binding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cl.Agp.Stev.Signature\Cl.Agp.Stev.Signature.csproj">
+      <Project>{ca021282-8c96-40f4-bf05-be0663a87d20}</Project>
+      <Name>Cl.Agp.Stev.Signature</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cl.Agp.Stev.Utils\Cl.Agp.Stev.Utils.csproj">
+      <Project>{da0a35b8-e113-44cc-b934-efabcb1c46fd}</Project>
+      <Name>Cl.Agp.Stev.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52530</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:44304/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:44304/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,11 @@
+﻿<urn:getInfo xmlns:urn="urn:ConsultaPID">
+	<consumidor>param_consumidor</consumidor>
+	<servicio>param_servicio</servicio>
+	<tramite>param_tramite</tramite>
+	<datainput>
+		<patente>param_ppu</patente>
+		<oficina>param_oficina</oficina>
+		<nroSolicitud>param_nro_solicitud</nroSolicitud>
+		<anho>param_anio</anho>
+	</datainput>
+</urn:getInfo>

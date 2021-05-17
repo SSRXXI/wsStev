@@ -1,0 +1,13 @@
+D:\AGP\wsStev\Cl.Agp.Stev.Signature\bin\Debug\Cl.Agp.Stev.Signature.dll
+D:\AGP\wsStev\Cl.Agp.Stev.Signature\bin\Debug\Cl.Agp.Stev.Signature.pdb
+D:\AGP\wsStev\Cl.Agp.Stev.Signature\bin\Debug\Cl.Agp.Stev.Binding.dll
+D:\AGP\wsStev\Cl.Agp.Stev.Signature\bin\Debug\Cl.Agp.Stev.Utils.dll
+D:\AGP\wsStev\Cl.Agp.Stev.Signature\bin\Debug\log4net.dll
+D:\AGP\wsStev\Cl.Agp.Stev.Signature\bin\Debug\Cl.Agp.Stev.Binding.pdb
+D:\AGP\wsStev\Cl.Agp.Stev.Signature\bin\Debug\Cl.Agp.Stev.Utils.pdb
+D:\AGP\wsStev\Cl.Agp.Stev.Signature\bin\Debug\log4net.xml
+D:\AGP\wsStev\Cl.Agp.Stev.Signature\obj\Debug\Cl.Agp.Stev.Signature.csprojAssemblyReference.cache
+D:\AGP\wsStev\Cl.Agp.Stev.Signature\obj\Debug\Cl.Agp.Stev.Signature.csproj.CoreCompileInputs.cache
+D:\AGP\wsStev\Cl.Agp.Stev.Signature\obj\Debug\Cl.Agp.Stev.Signature.csproj.CopyComplete
+D:\AGP\wsStev\Cl.Agp.Stev.Signature\obj\Debug\Cl.Agp.Stev.Signature.dll
+D:\AGP\wsStev\Cl.Agp.Stev.Signature\obj\Debug\Cl.Agp.Stev.Signature.pdb
